@@ -1,0 +1,119 @@
+@import 'variables'
+
+// 1. Your custom variables and variable overwrites.
+
+.container
+    max-width: 1360px
+    margin: 0 auto
+    padding: 0 25px
+
+body 
+    margin: 0
+    padding: 0
+
+html
+    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif
+    font-size: 1.125rem
+    line-height: 1.6
+    font-weight: normal
+    color: #000000
+
+img 
+    width: 100% 
+    max-width: 100%
+
+h2 
+    margin: 0 
+
+.wrapper-grid
+    display: grid
+    grid-template-columns: 1fr 335px
+    grid-column-gap: 83px
+    &_content 
+        width: 100%
+
+.btn-text--green
+    background: none 
+    border: none 
+    display: flex
+    align-items: center 
+    cursor: pointer
+    max-width: 300px
+    text-decoration: none
+    span 
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #78BE20
+    svg 
+        margin-left: 25px
+        transition: .2s
+    &:hover 
+        svg 
+            margin-left: 40px
+            transition: .2s
+
+div 
+    box-sizing: border-box
+
+p 
+    margin: 0 
+    
+.btn--green 
+    background-color: #78BE20
+    border: none
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 23px 54px
+    text-decoration: none
+    display: inline-block
+    cursor: pointer
+
+.download-btn 
+    display: flex
+    align-items: center
+    background: rgba(120, 190, 32, 0.1)
+    padding: 17px 35px
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #78BE20
+    text-decoration: none
+    svg 
+        margin-right: 25px
+
+
+.filter-btn-reset 
+    display: flex 
+    align-items: center 
+    cursor: pointer
+    span  
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #78BE20
+    svg 
+        margin-right: 13px
+
+.main-page_subtitle 
+    font-weight: 800
+    font-size: 36px
+    line-height: 43px
+    text-transform: uppercase
+    color: #000000
+// 3. Your custom mixin overwrites.
+@import 'variables'
+// @import 'slick-carousel/slick/slick-theme.sass'
+// @import 'slick-carousel/slick/slick.sass'
+// @import '../../node_modules/air-datepicker/dist/css/datepicker.css'
+// @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'

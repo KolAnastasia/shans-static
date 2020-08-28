@@ -1,0 +1,1180 @@
+.header
+    &_wrap
+        padding: 25px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_menu
+        display: flex
+        align-items: center
+        ul 
+            display: flex
+            list-style: none
+            padding-left: 0
+            margin: 0
+            li 
+                margin-right: 30px
+                a 
+                    text-decoration: none
+                    color: #000000
+                    padding: 15px 0
+                    font-size: 0.875rem
+                    transition: .2s
+                    &:hover 
+                        color: #78BE20
+                        transition: .2s
+    &_city
+        margin-left: 10px
+        position: relative
+        &-choose
+            display: flex
+            font-size: 14px
+            line-height: 17px
+            color: #9E9E9E
+            svg
+                margin-top: 6px
+        &_header 
+            cursor: pointer
+        &_body
+            line-height: 0
+            max-height: 0
+            overflow: hidden 
+            position: absolute
+            left: 0
+            right: 0
+            top: 100%
+            width: 100%
+            transition: .2s
+        &.active 
+            .header_city_body
+                line-height: 1.3 
+                max-height: 100%      
+                background-color: #ffffff
+                overflow: visible
+                transition: .2s
+                &_item 
+                    background-color: #ffffff
+                    z-index: 99
+                    position: relative
+    &_number
+        position: relative
+        &::before
+            position: absolute
+            right: calc(100% + 12px)
+            top: 6px
+            width: 10px
+            height: 14px
+            content: ""
+            background: url('../img/mob-icon.svg')
+        &_link
+            font-weight: 800
+            font-size: 14px
+            line-height: 17px
+            color: #000000    
+            text-decoration: none            
+            &:hover
+                color: #78BE20
+                transition: .2s    
+            &.hidden 
+                opacity: 0
+
+    &_language
+        font-size: 14px
+        line-height: 17px
+        color: #9E9E9E
+        &_value
+            display: flex
+            align-items: center
+            margin-top: 10px
+            &_country
+                font-weight: 800
+                font-size: 14px
+                line-height: 17px
+                color: #000000
+                margin-left: 10px
+
+    &_favourites 
+        width: 60px
+        height: 60px
+        border: 1px solid #E5E5E5
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        cursor: pointer
+
+        span 
+            display: inline-block
+            background-color: #78BE20
+            padding: 4px 5px
+            border-radius: 50%
+            font-weight: bold
+            font-size: 10px
+            line-height: 12px
+            color: #FFFFFF
+            position: absolute
+            top: -12px
+            right: 6px
+    
+    
+    .main-nav
+        background: #78BE20
+        ul 
+            list-style: none
+            padding: 0
+            margin: 0
+            display: flex
+            padding: 10px 0
+            justify-content: space-between
+            align-items: center
+            li a 
+                font-weight: bold
+                font-size: 14px
+                line-height: 17px
+                color: #FFFFFF
+                text-decoration: none
+                padding: 12px 5px
+                display: inline-block
+                position: relative
+                &:hover
+                    text-decoration: underline
+
+.header_seacrh-btn
+    background-color: #67AD0F
+    padding: 25px
+    height: 100%
+    margin-top: -21px
+    margin-bottom: -22px
+
+.main-page-slider 
+    position: relative
+.main-slider
+    width: 100%
+    &-item
+        width: 100%
+        position: relative
+        img 
+            width: 100%
+    &_content
+        position: absolute
+        top: 127px
+        left: 25%
+        &_bottom 
+            margin-left: 200px
+        h1 
+            font-weight: 800
+            font-size: 48px
+            line-height: 57px
+            text-transform: uppercase
+            color: #FFFFFF
+            margin-top: 0
+            margin-bottom: 50px
+        &_desc
+            font-size: 18px
+            line-height: 30px
+            color: #FFFFFF
+            max-width: 410px
+    &-wr .slick-arrow
+        position: absolute
+        z-index: 2
+
+    &_btn-wrap
+        position: absolute 
+        top: 375px
+        left: calc(25% + 200px)
+        display: flex 
+        align-items: center 
+        .main-slider_btn-prev 
+            margin-right: 55px 
+            cursor: pointer
+        .main-slider_btn-next
+            cursor: pointer
+    &_current-slider 
+        display: flex 
+        align-items: flex-start
+        position: absolute
+        left: 25% 
+        top: 295px 
+        color: #ffffff
+        &_index 
+            font-weight: bold
+            font-size: 36px
+            line-height: 30px
+            color: #FFFFFF
+            margin-right: 10px
+        &_total 
+            font-weight: bold
+            font-size: 18px
+            line-height: 30px
+            color: #FFFFFF
+            opacity: 0.5
+            line-height: 1  
+
+
+.main_desc 
+  display: grid
+  grid-template-columns: 1fr 1fr
+  padding-top: 80px
+  padding-bottom: 100px
+  &-wr 
+    background-image: url("../img/desc-decoration-line.svg")
+    background-position: center 
+    background-repeat: no-repeat 
+    background-size: cover 
+  &--left
+    max-width: 570px
+    &--bold 
+      font-weight: 800
+      font-size: 30px
+      line-height: 40px
+      color: #000000
+      margin-bottom: 48px
+    &_content
+      font-size: 18px
+      line-height: 30px
+      color: #000000
+      max-width: 495px
+
+  &--right
+    &_block 
+      margin-top: -180px
+      z-index: 3
+      position: relative
+      color: #FFFFFF
+      background: #78BE20
+      padding: 80px
+      &_link 
+        color: #ffffff
+        text-decoration: none
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #FFFFFF
+        display: inline-block
+        margin-top: 40px
+
+        span 
+          margin-left: 10px
+    &--bottom
+      display: flex
+      margin-top: 50px
+      &_pluses
+        max-width: 170px
+        &_value
+          font-weight: 800
+          font-size: 64px
+          line-height: 76px
+          color: #000000
+          margin-bottom: 10px
+        &_title
+          font-size: 14px
+          line-height: 24px
+          color: #9E9E9E
+        &:first-of-type
+          margin-right: 150px
+
+.main-tape
+  display: flex
+  justify-content: space-between
+  &-wr
+    background: #F9F9F9
+    padding: 80px 10px
+  &_img
+    margin-bottom: 26px
+    height: 40px
+    width: 40px
+  &_desc
+    font-weight: 800
+    font-size: 12px
+    line-height: 18px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #000000
+    position: relative
+  &_item
+    position: relative
+    &:after
+      position: absolute
+      content: ""
+      height: 56px
+      width: 27px
+      background: url('../img/tape-line.svg') center no-repeat
+      bottom: 0
+      right: -110px
+    &:last-of-type:after 
+      display: none
+
+.catalog
+    padding: 100px 0
+    &_item 
+        max-width: 330px
+        border: 1px solid #E5E5E5
+        padding: 30px
+        box-sizing: border-box
+        position: relative
+        margin-bottom: 50px
+        &:hover 
+            -webkit-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.64)
+            -moz-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.64)
+            box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.64)
+            transition: .2s
+            .catalog_item_img 
+                background-image: url("../../img/hover-bg.svg")
+                transition: .2s 
+                background-position: top center 
+                background-size: cover
+
+        &_img 
+            margin-bottom: 30px
+            text-align: center
+            img 
+                width: 100%
+                max-width: 127px
+                margin: 0 auto
+        a 
+            text-decoration: none 
+
+        &_title
+            font-weight: bold
+            font-size: 23px
+            line-height: 36px
+            margin-bottom: 10px
+            color: #000000
+        &_desc
+            font-size: 14px
+            line-height: 24px
+            color: #9E9E9E
+            margin-bottom: 25px
+            min-height: 75px
+        &_icons 
+            position: absolute
+            top: 10px
+            width: calc(100% - 60px)
+            display: flex
+            justify-content: space-between
+        &_mark 
+            width: 48px 
+        &_fav 
+            width: 30px
+        &_act-subst 
+            font-size: 14px
+            line-height: 24px
+            color: #9E9E9E
+            span 
+                font-weight: bold
+                color: #78BE20
+                display: block
+                margin-bottom: 5px
+
+.catalog-szr--wrapper 
+    width: 140%
+
+.catalog-szr-more 
+    margin-top: 64px
+
+.catalog-szr-wrap_filters
+    display: flex 
+    align-items: center 
+    &-wrap 
+        display: flex 
+        align-items: center
+        .filter-btn-reset 
+            margin-left: 35px
+    &_item 
+        background: #F9F9F9
+        padding: 20px 36px
+        font-weight: bold
+        font-size: 14px
+        line-height: 17px
+        color: #000000
+        svg 
+            margin-left: 15px
+.catalog-szr-wrap-top_wrap 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+    .catalog-szr-wrap_slider-btns 
+        display: flex 
+        align-items: center 
+        .catalog-szr_slider-prev 
+            margin-right: 55px
+
+.catalog-szr_slider-btn 
+    cursor: pointer
+
+.form-sing
+    &-wrap 
+        background-color: #78BE20
+        padding: 95px 0 100px 0
+        color: #ffffff
+        background-image: url('../../img/decoration-line.svg')
+        background-repeat: no-repeat 
+        background-size: cover
+    &_wr
+        display: flex
+        justify-content: space-between
+    &_left
+        max-width: 570px
+        &_title
+            font-style: normal
+            font-weight: bold
+            font-size: 36px
+            line-height: 43px
+            text-transform: uppercase
+            margin-bottom: 36px
+        &_desc 
+            max-width: 335px
+            font-weight: normal
+    &_right 
+        input 
+            display: block 
+            width: 100%
+            max-width: 490px
+            background: none
+            border: none 
+            color: #ffffff
+            padding-bottom: 16px
+            border-bottom: 1px solid #ffffff
+            margin-bottom: 50px
+            font-size: 16px
+            &::placeholder 
+                color: #ffffff
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                opacity: 0.5
+            &:focus::placehoder 
+                    color: transparent                
+        div 
+            display: flex
+            #agreement-sing
+                display: none
+            label 
+                margin-left: 30px 
+                position: relative
+                font-size: 12px
+                line-height: 14px
+                color: rgba(256, 256, 256, 0.5)
+                margin-right: 45px                
+                cursor: pointer
+                a 
+                    color: rgba(256, 256, 256, 0.5)
+                    text-decoration: none
+                    &:hover 
+                        text-decoration: underline
+                &:before 
+                    position: absolute
+                    content: ""
+                    left: -30px
+                    top: -4px
+                    width: 18px
+                    opacity: 0.5
+                    border: 1px solid #FFFFFF
+                    height: 18px
+                    cursor: pointer
+                    display: flex
+                    justify-content: flex-end
+            button 
+                background: none
+                border: none
+                width: 170px
+                font-weight: 800
+                font-size: 12px
+                line-height: 14px
+                display: flex
+                align-items: center
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                cursor: pointer
+                color: #FFFFFF
+                text-align: right
+                span 
+                    display: inline-block
+                    margin-left: 25px
+                    transition: .2s
+                &:hover 
+                    span 
+                        margin-left: 35px
+                        transition: .2s 
+
+#agreement-sing:checked + label:after 
+    position: absolute
+    content: ""
+    width: 10px
+    height: 10px
+    background-color: #ffffff
+    left: -25px
+    top: 1px  
+
+.catalog-plants-wrap 
+    overflow: hidden 
+    max-width: 100% 
+    background-color: #f9f9f9
+    padding: 100px 0
+
+.catalog-plants-wrap_top-wr 
+    display: flex 
+    align-items: center 
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 64px
+    &_btn 
+        display: flex 
+        align-items: center
+    .catalog-plants_slider-btn-prev 
+        margin-right: 55px
+    .catalog-plants_slider-btn 
+        cursor: pointer
+
+
+.plants-item 
+    max-width: 330px 
+    padding: 48px 36px 72px 36px 
+    -webkit-box-shadow: 1px 14px 8px -8px rgba(0,0,0,0.1)
+    -moz-box-shadow: 1px 14px 8px -8px rgba(0,0,0,0.1)
+    box-shadow: 1px 14px 8px -8px rgba(0,0,0,0.1)
+    background-color: #ffffff
+    margin-right: 80px
+    margin-bottom: 50px
+    a 
+        text-decoration: none 
+
+    &:hover 
+        .plants-item_title
+            transition: .2s
+            color: #78BE20
+    &_img 
+        height: 165px 
+        width: auto
+        margin-bottom: 48px
+    &_title 
+        font-weight: 800
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 16px 
+        color: #000000        
+        transition: .2s
+    &_desc 
+        font-size: 14px 
+        line-height: 1.7
+        color: #9E9E9E
+        min-height: 70px
+
+.catalog-plants--wrapper 
+    width: 140%
+.catalog-plants-more 
+    margin-top: 14px
+
+
+.news_item
+        &_title 
+            font-weight: bold
+            font-size: 18px
+            line-height: 24px
+            margin-bottom: 12px
+        &_desc 
+            font-weight: normal
+            font-size: 14px
+            line-height: 24px
+            color: #000000
+            margin-bottom: 12px
+        .news_item_text-wr 
+            padding-top: 25px
+        a 
+            text-decoration: none
+            color: #000000
+      
+            &:hover 
+                color: #78BE20
+                transition: .2s
+        &_info 
+            font-size: 12px
+            line-height: 30px
+            color: #9E9E9E
+            display: flex
+        &_date 
+            margin-right: 30px 
+            position: relative 
+            &:after 
+                position: absolute
+                content: "\2022"
+                right: -15px
+                top: 50%
+                transform: translateY(-50%)
+                width: 3px
+                height: 12px
+                line-height: 1
+
+.main-page_news
+    padding: 100px 0
+    .main-page_subtitle 
+        margin-bottom: 64px
+    .news-wrap 
+        display: grid
+        grid-template-columns: 490px 1fr 1fr
+        grid-gap: 10px 83px
+        .news_item
+            &:first-of-type
+                max-width: 490px 
+                background-color: #F9F9F9
+                .news_item_text-wr
+                    padding: 36px
+
+
+.main-press-center-item:first-of-type .news_item_text-wr
+    padding: 36px
+
+.main-news-more 
+    margin-top: 50px
+    
+
+.catalog-filter-main-wr 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 50px
+
+.catalog-filter-wr
+  display: flex
+  align-items: center
+
+.catalog-filter-wr_btn-wr
+  display: flex 
+  align-items: center
+
+.catalog-filter-wr_btn-next 
+  margin-left: 56px
+
+.catalog-szr-wrap 
+  padding: 100px 0 
+
+.main-page_subtitle_wrapper-flex 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 55px
+    &_btn-wr
+        display: flex
+        align-items: center 
+        .download-btn:first-of-type 
+            margin-right: 20px
+
+.filter
+    margin-right: 35px
+    position: relative    
+    &-item 
+        background: #F9F9F9
+        padding: 19px 35px
+        position: relative
+        font-size: 14px
+        &::after 
+            position: absolute
+            content: ""
+            width: 1px 
+            height: 32px
+            background-color: #E5E5E5
+            right: 0
+            top: 12px
+            z-index: 100
+ 
+        svg
+            margin-top: 6px
+        &_header 
+            font-weight: bold
+            cursor: pointer
+            font-size: 14px
+            svg 
+                margin-left: 25px
+             
+        &_body
+            line-height: 0
+            max-height: 0
+            overflow: hidden 
+            position: absolute
+            left: 0
+            right: 0
+            top: 100%
+            width: 100%
+            transition: .2s
+            &_item 
+                background-color: #F9F9F9
+                z-index: 99
+                position: relative
+                padding: 5px 5px 5px 35px 
+                font-weight: bold 
+    
+        &:last-of-type
+          &:after 
+            display: none
+        &.active 
+            .filter-item_body
+                line-height: 1.3 
+                max-height: 100%      
+                background-color: #F9F9F9
+                overflow: visible
+
+                transition: .2s
+
+                &_item 
+                    background-color: #F9F9F9
+                    z-index: 99
+                    position: relative
+                    padding: 5px 5px 5px 35px 
+                    font-weight: bold 
+
+
+
+
+.filter-productPests:after 
+  display: none
+
+.catalog-filter-reset 
+  font-weight: bold
+  font-size: 12px
+  line-height: 14px
+  letter-spacing: 0.1em
+  text-transform: uppercase
+  color: #78BE20
+  display: flex
+  align-items: center 
+  cursor: pointer
+  margin-left: 36px
+  svg 
+    margin-right: 12px
+
+.catalog-szr-title
+  font-weight: 800
+  font-size: 36px
+  line-height: 43px
+  text-transform: uppercase
+  &-wr 
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 50px
+  &_btn 
+    display: flex
+    align-items: center 
+    background: rgba(120, 190, 32, 0.1)
+    padding: 17px 35px
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #78BE20
+    text-decoration: none
+    &-wr 
+      display: flex
+    svg 
+      margin-right: 25px
+    &:not(:last-of-type)
+      margin-right: 20px
+      
+.catalog-szr-wrap 
+  width: 100% 
+  overflow: hidden
+
+.main-catalog-plant-wr 
+  background-color: #F9F9F9
+  padding: 100px 0
+  width: 100% 
+  overflow: hidden
+
+.catalog-plants-title 
+  font-weight: 800
+  font-size: 36px
+  line-height: 43px
+  text-transform: uppercase
+  margin-bottom: 64px
+
+.main-news-wr 
+  padding: 100px 0
+
+
+.form
+    &-quest 
+        background-color: #78BE20
+        color: #ffffff
+        padding: 80px 0
+        background-image: url('../../img/decoration-line.svg')
+        background-repeat: no-repeat 
+        background-size: cover
+        &_top
+            display: flex
+            justify-content: space-between
+            margin-bottom: 50px 
+        &_header 
+          cursor: pointer
+          position: relative
+          font-weight: bold
+          font-size: 12px
+          line-height: 14px
+          letter-spacing: 0.1em
+          text-transform: uppercase
+          opacity: 0.5
+          border-bottom: 1px solid rgba(256, 256, 256, 0.5)
+          padding-bottom: 12px
+          &:after
+            position: absolute
+            content: ""
+            background: url('../../img/select-icon.svg')
+            right: 15px
+            top: 2px
+            width: 8px
+            height: 5px
+        &_theme 
+            position: relative
+            .form-quest_body
+              max-height: 0
+              position: absolute
+              left: 0
+              right: 0
+              top: 100%
+              overflow: hidden
+              line-height: 0
+              background-color: #78BE20
+              &_item 
+                background-color: #78BE20
+                padding-bottom: 10px
+        &_theme.active 
+            .form-quest_body
+              max-height: 100%
+              position: absolute
+              left: 0
+              right: 0
+              bottom: 0
+              overflow: visible
+              line-height: 100%
+        &_geo
+          a 
+            color: #ffffff
+            display: flex
+            font-weight: 800
+            font-size: 12px
+            line-height: 14px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            align-items: center
+            text-decoration: none
+            img 
+              margin-right:  15px
+              max-width: 14px
+            &:hover 
+              text-decoration: underline
+        &_agreement
+          #agreement-quest 
+            display: none 
+          label 
+            margin-left: 30px 
+            position: relative
+            font-size: 12px
+            line-height: 14px
+            color: rgba(256, 256, 256, 0.5)
+            cursor: pointer
+            a 
+              color: rgba(256, 256, 256, 0.5)
+              text-decoration: none
+              &:hover 
+                text-decoration: underline
+            &:before 
+              position: absolute
+              content: ""
+              left: -30px
+              top: -4px
+              width: 18px
+              opacity: 0.5
+              border: 1px solid #FFFFFF
+              height: 18px
+              cursor: pointer
+        &_bottom-wr
+          grid-column: span 2
+          display: flex
+          justify-content: space-between
+
+
+    &_title 
+        font-weight: bold
+        font-size: 36px
+        line-height: 43px
+        text-transform: uppercase
+        color: #FFFFFF
+    &_desc
+        max-width: 490px
+        a 
+            color: #ffffff
+            font-weight: bold
+            text-decoration: none
+            &:hover 
+                text-decoration: underline
+    &-quest_form 
+        display: grid
+        grid-gap: 35px 80px
+        grid-template-columns: repeat(auto-fit, minmax(330px, 1fr))
+        input 
+            border: none
+            border-bottom: 1px solid rgba(256, 256, 256, 0.5)
+            background: none
+            padding-bottom: 12px
+            color: #ffffff
+            box-sizing: border-box
+            font-size: 16px
+            &::placeholder
+                font-weight: bold
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                color: #FFFFFF
+                opacity: 0.5
+            &:focus::placeholder 
+                color: transparent
+        #questions 
+            grid-column: span 2
+        .btn-wrap
+          display: flex
+          justify-content: flex-end
+          button 
+            background: none
+            border: none
+            width: 200px
+            font-weight: 800
+            font-size: 12px
+            line-height: 14px
+            display: flex
+            align-items: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            cursor: pointer
+            color: #FFFFFF
+            span 
+              display: inline-block
+              margin-left: 25px
+              transition: .2s
+            &:hover 
+              span 
+                margin-left: 35px
+                transition: .2s
+
+
+#agreement-quest:checked + label:after 
+  position: absolute
+  content: ""
+  width: 10px
+  height: 10px
+  background-color: #ffffff
+  left: -25px
+  top: 1px
+
+.main_trust 
+  background-color: #F9F9F9
+  padding: 66px 0 60px 0
+  &-wr 
+    display: flex
+    justify-content: space-between
+  &_subtitle 
+    font-weight: 800
+    font-size: 36px
+    line-height: 43px
+    text-transform: uppercase
+    margin-right: 100px
+    max-width: 345px
+    width: 100%
+  &_content 
+    max-width: 980px
+    width: 100%
+    overflow: hidden
+    &_item 
+      max-width: fit-content
+
+
+.footer
+    padding-bottom: 48px
+    nav
+        ul 
+            padding: 43px 0
+            margin: 0
+            display: flex
+            align-items: center
+            list-style: none
+            justify-content: space-between
+            border-bottom: 1px solid #E5E5E5
+            li 
+                a 
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    text-transform: uppercase
+                    color: #000000
+                    transition: .2s
+                    padding: 5px
+                    text-decoration: none
+                    &:hover 
+                        transition: .2s
+                        color: #78BE20
+    &-container
+        display: grid
+        grid-template-columns: 250px 1fr 1fr
+        grid-gap: 36px 95px
+        padding-top: 65px
+    &_address
+        &_title
+            display: flex
+            align-items: center
+            font-weight: 800
+            font-size: 12px
+            line-height: 14px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #9E9E9E
+            margin-bottom: 15px
+            svg 
+                margin-right: 15px
+        &_represent
+            font-size: 14px
+            line-height: 17px
+            margin-bottom: 24px
+            a 
+                color: #78BE20
+                &:hover
+                    text-decoration: none  
+        &_contacts
+            &_tel
+                font-weight: 800
+                font-size: 18px
+                line-height: 21px
+                text-decoration: none
+                color: #000000
+                display: inline-block
+                margin-bottom: 8px
+                transition: .2s
+                &:hover 
+                    transition: .2s
+                    color: #78BE20
+            &_address
+                font-size: 14px
+                line-height: 17px
+                color: #000000
+                margin-bottom: 5px
+            &_mail
+                font-size: 14px
+                line-height: 17px
+                color: #78BE20
+                &:hover
+                    text-decoration: none 
+
+    &-wrap-link
+        display: flex
+        justify-content: space-between
+        grid-column: span 2
+    
+    &_soc a 
+        display: inline-block
+        margin-right: 22px
+        &:last-of-type
+            margin-right: 0   
+        &:hover 
+            svg circle
+                fill: rgba(158, 158, 158, 0.3)
+
+    &_form
+        form 
+            div 
+                display: flex
+                align-items: center 
+                margin-bottom: 25px
+                input
+                    padding: 21px 15px 21px 30px
+                    width: 100% 
+                    max-width: 490px
+                    border: 1px solid #E5E5E5
+                    &::placeholder
+                        font-weight: 800
+                        font-size: 12px
+                        line-height: 14px
+                        letter-spacing: 0.1em
+                        text-transform: uppercase
+                        color: #9E9E9E
+                    &:focus::placeholder
+                        color: transparent
+                button
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #FFFFFF
+                    padding: 22px 22px
+                    border: none
+                    background-color: #78BE20
+                    cursor: pointer
+                    position: relative
+            #agreement
+                display: none                       
+            label
+                font-size: 12px
+                line-height: 14px
+                color: #9E9E9E
+                margin-left: 30px
+                position: relative
+                cursor: pointer
+                a 
+                    color: #9E9E9E
+                    &:hover 
+                        text-decoration: none
+                &:after 
+                    position: absolute
+                    content: ""
+                    width: 18px
+                    height: 18px
+                    border: 1px solid #E5E5E5
+                    left: -30px
+                    top: -4px
+                    cursor: pointer
+    &_copyright
+        font-size: 14px
+        line-height: 17px
+        color: #9E9E9E
+        &-wr 
+            display: flex 
+            align-items: center
+            .footer-dev 
+                display: none
+
+    &_links a
+        font-size: 14px
+        line-height: 17px
+        color: #9E9E9E
+        display: inline-block
+        &:first-of-type
+            margin-right: 45px
+        &:hover 
+            text-decoration: none
+
+    &-dev
+        font-size: 14px
+        line-height: 17px
+        color: #9E9E9E
+        display: flex
+        align-items: center 
+        justify-content: flex-end
+        a
+            color: #78BE20
+            text-decoration: none
+            transition: .2s
+            &:hover 
+                color: #f0303d
+                transition: .2s
+#agreement:checked + label:before
+        position: absolute
+        content: ""
+        width: 10px
+        height: 10px
+        left: -25px
+        top: 1px
+        cursor: pointer
+        background-color: #78BE20
