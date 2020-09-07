@@ -1,0 +1,153 @@
+
+.product-card_szr_top 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+
+.product-card_szr_top_view 
+    display: -webkit-box
+    display: grid
+    margin-right: 15px
+    grid-template-columns: 1fr 164px
+    max-width: 655px
+    width: 100%    
+    border: 1px solid #E5E5E5
+.product-card_szr_view_photo
+    max-width: 490px
+    position: relative
+    &_item
+        padding: 54px 138px
+        position: relative
+        &_type
+            position: absolute
+            top: 30px 
+            left: 30px 
+            width: 64px
+            height: 64px
+    &::after 
+        content: ""
+        position: absolute
+        background: url("../../img/magnifer.svg")
+        width: 30px 
+        right: 56px 
+        bottom: 56px
+        height: 30px
+.product-card_szr_top_view_nav 
+    background-color: #E5E5E5
+    .slick-list.draggable
+        .slick-track 
+            display: flex
+            flex-direction: column
+            .slick-slide 
+                width: 100% !important
+
+
+.product-card_szr_view_photo_nav_item 
+    padding: 25px 50px 
+    cursor: pointer
+    width: 100% 
+    box-sizing: border-box
+
+
+.product-card_szr_top_desc 
+    -webkit-max-width: 490px 
+    -moz-max-width: 490px 
+    -ms-max-width: 490px 
+    -o-max-width: 490px 
+    max-width: 490px 
+    width: 100%
+    &_title 
+        font-weight: 800
+        font-size: 36px
+        line-height: 30px
+        margin-bottom: 25px 
+    &_content 
+        font-size: 14px
+        line-height: 24px
+        color: #9E9E9E
+        margin-bottom: 35px 
+    &_compound 
+        display: flex 
+        align-items: center
+        font-size: 14px
+        margin-bottom: 16px
+        &_name 
+            font-weight: bold
+            width: 170px 
+            margin-right: 76px
+    &-more 
+        font-size: 14px
+        line-height: 24px
+        color: #78BE20
+        display: inline-block 
+        text-decoration: none 
+        border-bottom: 1px dashed #78BE20
+        margin-bottom: 50px
+        &:hover 
+            border-bottom: none
+            margin-bottom: 51px 
+
+    .cat_download-btn 
+        margin-bottom: 2px 
+        &:last-of-type
+            margin-bottom: 38px
+    &-btn-wr 
+        display: flex
+        align-items: center
+    .btn--green 
+        padding: 23px 5px
+        display: flex
+        justify-content: center
+        width: 100%
+    .product-card_szr_buy 
+        display: flex
+        align-items: center 
+        padding: 21.5px 5px 
+        width: 100%
+        background-color: #F9F9F9 
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        justify-content: center 
+        text-decoration: none 
+        transition: .2s
+        color: #000000
+        svg 
+            margin-right: 12px
+        &:hover 
+            background-color: #dcdbdb
+            transition: .2s
+
+
+.product-card_szr_content
+    &_char 
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(400px, 400px))
+        grid-gap: 35px 98px
+        margin-bottom: 64px
+        &_item 
+            display: flex 
+            align-items: flex-start 
+        &_icon 
+            margin-right: 23px
+        &_desc 
+            font-size: 18px
+        &_subtitle 
+            font-weight: bold
+    &_subtitle
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        margin-bottom: 35px
+    &_list 
+        margin: 0
+        list-style: square
+        padding-left: 20px
+        &_item 
+            position: relative
+            color: #78BE20
+            margin-bottom: 24px
+            span 
+                color: #000000

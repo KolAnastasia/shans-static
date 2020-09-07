@@ -1,0 +1,57 @@
+.cat-micro_item 
+    border: 1px solid #E5E5E5
+    padding: 36px 
+    position: relative
+    &:hover 
+        -webkit-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        -moz-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        transition: .2s
+        .cat-micro_item_img 
+            background-image: url("../../assets/hover-bg.svg")
+            transition: .2s
+            background-position: center center
+            background-size: 140% 140%
+
+    a 
+        text-decoration: none 
+        color: #000000
+    &_img 
+       padding: 0 55px 35px 55px
+    &_title 
+        font-weight: 800
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 10px
+    &_desc 
+        font-size: 14px
+        line-height: 24px
+        color: #9E9E9E
+        margin-bottom: 25px 
+    &_act-components 
+        font-size: 14px
+        line-height: 24px
+        &_subtitle
+            display: block
+            color: #78BE20
+            font-weight: bold
+        span 
+            p 
+                margin: 0
+    &_icons 
+        position: absolute
+        width: 100% 
+        padding:  0 36px 
+        top: 36px 
+        left: 0
+        display: flex 
+        justify-content: space-between
+        &_type 
+           width: 48px 
+           height: 48px 
+
+.catalog-micro-wr
+    display: grid 
+    grid-template-columns: repeat(auto-fit, minmax(330px, 330px))
+    grid-gap: 64px 15px
+    justify-content: space-between

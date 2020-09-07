@@ -1,0 +1,109 @@
+.catalog-seed-wrap_filters-wrap 
+    display: -webkit-box
+    display: flex
+    -webkit-box-align: center
+    align-items: center
+    width: 100%
+    justify-content: space-between
+
+
+.seed-item-link 
+    color: #000000
+    text-decoration: none 
+    transition: .2s
+    &:hover 
+        -webkit-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        -moz-box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        box-shadow: -5px 29px 22px -26px rgba(0,0,0,0.4)
+        transition: .2s
+
+.seed-item 
+    padding: 36px
+    border: 1px solid #E5E5E5
+    box-sizing: border-box
+    position: relative
+    > img 
+        margin-bottom: 36px
+
+    &_title 
+        font-weight: 800
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 10px 
+        color: #000000
+    &_desc 
+        font-size: 14px
+        line-height: 24px
+        color: #9E9E9E
+        margin-bottom: 24px
+    &_icons 
+        display: flex 
+        align-items: center
+        &_purpose 
+            background-color: #78BE20
+            border-radius: 50px
+            display: flex 
+            align-items: center
+            padding: 11px 13px 11px 13px 
+            width: fit-content
+            margin-right: 20px
+            img 
+                width: 20px 
+                height: 20px
+            span 
+                font-weight: 800
+                font-size: 12px
+                line-height: 24px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                color: #FFFFFF
+                max-width: 0px 
+                transition: .2s 
+                overflow: hidden
+                padding: 0 
+                display: inline-block 
+            &:hover 
+                span 
+                    max-width: 100% 
+                    overflow: visible
+                    transition: .2s 
+                    padding: 0 10px
+                    display: inline-block 
+                    
+        &_type 
+            border-radius: 50px
+            display: flex 
+            align-items: center
+            padding: 13px 13px 13px 13px 
+            width: fit-content
+            background-color: #F2994A
+            img 
+                width: 20px 
+                height: 20px
+            span 
+                font-weight: 800
+                font-size: 12px
+                line-height: 24px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                color: #FFFFFF
+                max-width: 0px 
+                transition: .2s 
+                overflow: hidden
+                padding: 0 
+                display: inline-block 
+            &:hover 
+                span 
+                    max-width: 100% 
+                    overflow: visible
+                    transition: .2s
+                    padding: 0 10px
+                    display: inline-block 
+    &_fav 
+        position: absolute 
+        right: 60px 
+        top: 60px
+        z-index: 3
+
+
+

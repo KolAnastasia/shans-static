@@ -1,0 +1,312 @@
+@media screen and (max-width: 1350px)
+    .heading-wrap .tabs ul li 
+        padding: 0 20px 30px 20px
+    
+    
+@media screen and (max-width: 1200px) 
+    .header 
+        &_menu 
+            display: none 
+    
+    .main-nav
+        display: none
+
+    .footer 
+        &_menu 
+            display: none 
+        &-container 
+            grid-gap: 25px 30px   
+            
+        &_soc 
+            a 
+            margin-right: 5px
+
+    .form-quest
+        &_form
+            .btn-wrap 
+                justify-content: flex-start
+
+
+
+    .main_desc 
+        display: flex
+        padding-top: 0
+        flex-direction: column
+        &--left 
+            order: 2
+            max-width: 100%
+            &_content 
+                max-width: 100%
+        &--right 
+            order: 1
+            margin-bottom: 65px
+            &_block 
+                width: calc(100% + 50px)
+                margin-left: -25px
+                margin-top: -10px
+                padding-right: 80px
+                box-sizing: border-box
+            &--bottom 
+                max-width: 570px
+                justify-content: space-between
+                &_pluses:first-of-type 
+                margin-right: 10px
+    .main-tape
+        &_item 
+            &:after 
+                right: -65px
+
+    .product-card_szr_view_photo 
+        max-width: 290px
+        margin: 0 auto
+        &_item
+            padding: 54px 30px
+
+@media screen and (max-width: 1165px) 
+    .main-catalog_micro-wr 
+        .catalog-micro-wr
+            justify-content: flex-start
+
+    .filter-item:after
+        height: 60%
+        top: 17px
+
+    .main-catalog_szr-wr 
+        .catalog-szr-wr
+            justify-content: flex-start
+
+    .filter-item:after
+        height: 60%
+        top: 17px
+
+@media screen and (max-width: 1024px) 
+    .footer 
+        &-container 
+          display: flex
+          flex-direction: column
+        &-wrap-link
+          display: flex
+          justify-content: space-between
+          grid-column: span 1
+        &_address
+          margin-bottom: 50px
+          order: 1
+        &_soc
+          margin-bottom: 50px
+          order: 2
+        &_form
+          margin-bottom: 50px
+          order: 3
+          form 
+            div 
+              input 
+                max-width: 515px
+        &_copyright-wr
+          margin-bottom: 50px
+          order: 5
+          display: flex
+          justify-content: space-between
+          .footer-dev 
+            display: block
+        &-wrap-link
+          margin-bottom: 50px
+          order: 4
+          .footer-dev
+            display: none
+
+@media screen and (max-width: 1000px) 
+    .form
+        &_title
+            margin-bottom: 15px
+        &-quest
+            &_top
+                flex-direction: column
+        &_form
+            #questions
+                grid-column: span 1
+        &_desc 
+            max-width: 100%
+
+
+@media screen  and (max-width: 981px)
+    .form-sing
+        &_wr 
+            flex-direction: column
+        &_left
+            max-width: 100%
+        &_desc 
+            margin-bottom: 50px
+            max-width: 100%
+        &_right 
+            input 
+                max-width: 100%
+            
+            div 
+                justify-content: space-between
+
+    .main-tape
+        display: grid
+        grid-template-columns: 1fr 1fr 
+        grid-gap: 45px 60px
+        &_item 
+            &:after 
+                display: none
+
+    .catalog-micro_filter-wrap 
+        flex-direction: column 
+        align-items: flex-start
+        .filter-item 
+            width: 100% 
+            margin-bottom: 10px
+            &:after 
+                display: none
+        .filter-btn-reset
+            margin-left: 0
+            margin-top: 20px
+
+
+    .catalog-szr_filter-wrap 
+        flex-direction: column 
+        align-items: flex-start
+        .filter-item 
+            width: 100% 
+            margin-bottom: 10px
+            &:after 
+                display: none
+        .filter-btn-reset
+            margin-left: 0
+            margin-top: 20px
+
+
+    .main-catalog_bottom_content
+        flex-direction: column
+        &_text 
+            max-width: 100% 
+            margin-right: 0 
+            margin-bottom: 20px
+        &_number-wr 
+            width: calc(100% + 50px) 
+            margin-left: -25px 
+            max-width: initial
+            padding: 40px 15px 40px 25px
+    .product-card_szr_top
+        flex-direction: column
+    .product-card_szr_top_view
+        max-width: 100%
+        margin-bottom: 25px
+
+    .product-card_szr_top_desc 
+        max-width: 100%
+
+    .cat_download-btn
+        max-width: 500px
+
+@media screen and (max-width: 800px) 
+    .form
+        &-quest
+            &_form
+                #questions
+                    grid-column: span 1
+            &_bottom-wr
+                grid-column: span 1
+
+
+@media screen and (max-width: 768px) 
+
+    .main_desc 
+        &--right 
+            &_block 
+                padding: 65px 20px
+
+    .main_trust 
+        &-wr 
+            flex-direction: column
+        &_subtitle 
+            margin-right: 0
+            margin-bottom: 50px
+
+    .main-catalog_micro_fast
+        flex-direction: column
+        &_subtitle 
+            margin-bottom: 35px
+        .main-catalog_micro
+            &_top
+                flex-direction: column
+            &_desc 
+                width: 100%
+                margin-bottom: 20px
+
+
+    .main-catalog_szr_fast
+        flex-direction: column
+        &_subtitle 
+            margin-bottom: 35px
+        .main-catalog_szr
+            &_top
+                flex-direction: column
+            &_desc 
+                width: 100%
+                margin-bottom: 20px
+
+@media screen and (max-width: 600px)    
+    .footer
+        &_form 
+            form 
+                div
+                flex-direction: column
+                input 
+                    box-sizing: border-box
+                    max-width: 100%
+                    margin-bottom: 25px
+                button 
+                    width: 100%
+
+
+    .form
+        &-quest
+            &_bottom-wr
+                flex-direction: column
+            &_agreement 
+                margin-bottom: 40px
+
+
+    .form-sing
+        &_wr 
+            flex-direction: column
+        &_left
+            max-width: 100%
+        &_right 
+            div 
+                flex-direction: column
+                label 
+                    margin-bottom: 40px
+
+    .main-slider
+        &_content 
+            top: 65px
+            left: 20px
+            h1 
+                font-size: 36px
+            &_desc 
+                padding-right: 20px
+
+
+
+@media screen and (max-width: 560px) 
+    .search-wrap 
+        form 
+            flex-direction: column
+            input 
+                width: 100% 
+                margin-bottom: 35px 
+            button 
+                width: 100% 
+                text-align: center
+
+    .product-card_szr_top_view
+        grid-template-columns: 1fr 
+    
+    .product-card_szr_top_view_nav 
+        .slick-list.draggable 
+            .slick-track
+                flex-direction: row

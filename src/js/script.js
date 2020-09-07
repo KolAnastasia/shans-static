@@ -24,10 +24,34 @@ $(".main-slider-wr").slick({
 })
 
 
+$('.photo-gallery').fancybox({
+
+})
+
+
+$('.product-card_szr_view_photo').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.product-card_szr_top_view_nav'
+});
+
+$('.product-card_szr_top_view_nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.product-card_szr_view_photo',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  centerPadding: 0
+});
+
+
+
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 $(".main_trust_content").slick({
-        slidesToShow: 1,
         slidesToScroll: 1,
         slidesToShow: 4,
         appendArrows: false,
@@ -66,7 +90,13 @@ $(".main_trust_content").slick({
         ]
 })
 
-
+$(".inner-news_slider").slick({ 
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: $(".inner-news_slider_next"),
+  prevArrow: $(".inner-news_slider_prev")
+})
+if ($('div').is(".header_city_header")) {
 let select = function () {
     let selectHeader = document.querySelector('.header_city_header');
     let selectItem =  document.querySelectorAll('.header_city_body_item');
@@ -89,8 +119,8 @@ let select = function () {
     }
 };
 select();
-
-
+}
+if ($('div').is(".filter-item-wr")) {
 let selectForm = function () {
     let selectHeader = document.querySelector('.filter-item-wr');
     let selectItem =  document.querySelectorAll('.filter-item_body_item');
@@ -112,6 +142,38 @@ let selectForm = function () {
     }
 };
 selectForm();
+}
 
+$('.tabs-dots li').click(function (event) {
+  $('.tabs-details').removeClass('active');
+  $('.tabs-dots li').removeClass('is-active');
+  var num = $(this).attr('data-n');
+  $('#tabs-details' + num).addClass('active');
+  $(this).addClass('is-active');
+});
+
+if ($('div').is(".press_filter-item-wr")) {
+let filterNews = function () {
+  let selectHeader = document.querySelector('.press_filter-item-wr');
+  let selectItem =  document.querySelectorAll('.press_filter-item_body_item');
+  selectHeader.addEventListener("click", function () {
+      selectToggle();
+  });
+  selectItem.forEach(function (item) {
+      item.addEventListener("click", function () {
+          selectChoose(item);
+      });
+  });
+  function selectToggle() {
+      document.querySelector('.press_filter-item').classList.toggle('active');
+  }
+  function selectChoose(option) {
+      let selectedText = option.innerText
+      document.querySelector('.select__current').innerText(selectedText);
+      selectToggle();
+  }
+};
+filterNews();
+}
 
 });

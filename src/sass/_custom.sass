@@ -111,9 +111,177 @@ p
     line-height: 43px
     text-transform: uppercase
     color: #000000
+
+
+.breadcrumbs  
+    list-style: none
+    padding: 0
+    margin: 50px 0
+    display: flex
+    max-width: 900px
+    flex-wrap: wrap
+    align-items: center
+    li 
+        margin-right: 17px
+        position: relative
+        margin-right: 17px
+        position: relative
+        line-height: 1
+        display: flex
+        align-items: center
+        a
+            font-size: 12px
+            line-height: 14px
+            color: #9E9E9E
+            text-decoration: none
+            transition: .2s
+            &:hover 
+                color: #000000
+                transition: .2s
+        &:after
+            position: absolute
+            content: ""
+            width: 5px
+            height: 5px
+            background: url('../img/breadcrumb-ar.svg')
+            top: 50%
+            transform: translateY(-50%)
+            right: -10px
+
+        &:last-of-type:after 
+            display: none
+    .active-page 
+        font-size: 12px
+        line-height: 14px
+        color: #78BE20
+    &-heading 
+        margin-top: 0
+        margin-bottom: 65px
+        font-weight: 800
+        font-size: 36px
+        line-height: 43px
+        text-transform: uppercase
+        color: #000000
+
+.tabs-dots 
+    display: flex
+    justify-content: center
+    list-style: none
+    margin: 0
+    padding: 0
+    flex-wrap: wrap  
+    li
+        padding: 0 65px 30px 65px
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #9E9E9E
+        text-decoration: none
+        cursor: pointer
+    .is-active 
+        border-bottom: 3px solid #78BE20
+        color: #000000
+.tabs-details
+    background-color: #F9F9F9
+    padding: 80px 80px 100px 80px 
+    margin-bottom: 100px
+        
+
+
+.btn-more
+    &_icon 
+        padding: 15px 24px
+        border: 1px solid #E5E5E5
+        box-sizing: border-box
+        margin-right: 25px
+        transition: .2s
+        transform: rotateX(0)
+    &_wr
+        display: flex
+        align-items: center
+        cursor: pointer
+        max-width: 237px
+        span 
+            font-weight: 800
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #78BE20
+            font-weight: 800
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #78BE20
+   
+        &:hover 
+            .btn-more_icon svg path
+                stroke: #000000 !important
+                transition: .2s
+            span 
+                color: #000000
+
+.tabs-details 
+    display: none 
+    &.active 
+        display: block
+
+.btn--green 
+    background-color: #78BE20
+    border: none
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #FFFFFF
+    padding: 23px 54px
+    text-decoration: none
+    display: inline-block
+    cursor: pointer
+
+
+.download-catalog 
+    display: flex
+    align-items: center
+    background: rgba(120, 190, 32, 0.1)
+    padding: 17px 35px
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #78BE20
+    text-decoration: none
+    svg 
+        margin-right: 25px
+                
+
+.cat_download-btn 
+    display: flex 
+    align-items: center
+    justify-content: space-between
+    padding: 17px 25px 
+    background-color: rgba(120, 190, 32, 0.1)
+    font-weight: 800
+    font-size: 12px
+    line-height: 14px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    color: #78BE20
+    text-decoration: none
+    &_wrap 
+        display: flex 
+        align-items: center
+    span 
+        margin-left: 25px 
+        display: inline-block
 // 3. Your custom mixin overwrites.
 @import 'variables'
 // @import 'slick-carousel/slick/slick-theme.sass'
 // @import 'slick-carousel/slick/slick.sass'
 // @import '../../node_modules/air-datepicker/dist/css/datepicker.css'
-// @import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
+@import '../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css'
