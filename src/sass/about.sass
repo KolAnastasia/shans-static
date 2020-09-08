@@ -1,0 +1,189 @@
+.content_link
+    display: flex
+    justify-content: center
+    list-style: none
+    margin: 0
+    padding: 0
+    flex-wrap: wrap  
+    li
+        padding: 0 65px 30px 65px
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #9E9E9E
+        text-decoration: none
+        cursor: pointer
+        a 
+            text-decoration: none 
+            color: #9E9E9E
+    .is-active 
+        border-bottom: 3px solid #78BE20 
+        a
+            color: #000000
+
+.main-wrapper
+    background-color: #F9F9F9
+    padding: 80px 80px 100px 80px 
+    margin-bottom: 100px
+    @media screen and ( max-width:  768px)
+        padding: 40px 25px 60px 25px
+        
+    
+    
+    
+    
+.about-company
+    &_desc 
+        font-weight: bold
+        font-size: 18px
+        max-width: 735px 
+        line-height: 30px
+        margin-bottom: 70px
+    &_static
+        display: flex 
+        margin-bottom: 95px
+        &_left 
+            display: flex 
+            flex-direction: column 
+            width: 100% 
+            max-width: 245px
+            margin-right: 80px
+            justify-content: space-between 
+            &_item
+                margin-bottom: 10px
+                &_val 
+                    font-weight: 800
+                    font-size: 48px
+                    line-height: 57px
+                    color: #78BE20
+                    margin-bottom: 15px
+                &_param 
+                    font-size: 14px
+                    line-height: 24px
+                    color: #9E9E9E
+                &:last-of-type
+                    margin-bottom: 0
+
+        &_right 
+            background-color: #78BE20
+            background-image: url('../img/decoration-line.svg') 
+            background-size: cover 
+            background-repeat: no-repeat 
+            padding: 76px 80px 
+            color: #ffffff
+            .btn-text--white 
+                max-width: 350px
+        &_subtitle 
+            font-weight: 800
+            font-size: 24px
+            line-height: 29px
+            margin-bottom: 25px 
+        &_content 
+            font-size: 18px
+            line-height: 30px
+            margin-bottom: 50px
+
+    &_subtitle 
+        font-weight: 800
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 25px 
+    &_content 
+        font-size: 18px
+        line-height: 30px
+        margin-bottom: 68px 
+        max-width: 655px
+    &_principle
+        display: grid 
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 80px
+        padding: 45px 80px 0 80px
+        min-width: 1310px 
+        margin-top: 10px        
+        border-top: 1px solid #E5E5E5
+        @media screen and ( max-width: 768px )
+               grid-column-gap: 30px
+        &-wr
+            overflow-x: auto
+            width: calc(100% + 160px) 
+            margin-left: -80px
+            @media screen and ( max-width: 768px )
+                width: calc(100% + 50px) 
+                margin-left: -25px
+        &_num 
+            font-weight: 800
+            font-size: 48px
+            line-height: 57px
+            color: #78BE20
+            position: relative
+            margin-bottom: 25px 
+            &:before 
+                position: absolute 
+                content: "" 
+                top: -49px 
+                left: 0 
+                background: url('../img/about-circle.svg')
+                background-size: cover 
+                background-repeat: no-repeat 
+                width: 8px 
+                height: 8px
+
+
+
+        &_desc 
+            font-weight: bold
+            font-size: 18px
+            line-height: 30px
+
+
+.about-history 
+    &_slider-btns 
+        display: flex 
+        align-items: center 
+        border-bottom:  3px solid #78BE20
+        width: 85px 
+        padding-bottom: 25px
+    &_slider-btn
+        cursor: pointer
+        &-prev
+            margin-right: 55px
+    &_content
+        border-top: 1px solid #E5E5E5
+        margin-top: -1px
+        width: calc(100% + 160px) 
+        margin-left: -80px
+        padding: 0 80px
+        @media screen and ( max-width: 768px )
+            width: calc(100% + 50px) 
+            margin-left: -25px
+            padding: 0 25px
+        
+    &_slider-nav
+        max-width: 500px
+        &-wr
+            display: flex 
+            justify-content: flex-end
+            margin-bottom: 65px
+        &_item 
+            font-size: 18px
+            line-height: 30px
+            color: #9E9E9E 
+    &_slider 
+        &_item 
+            &_wr 
+                display: flex 
+                align-items: flex-start 
+                justify-content: space-between 
+            &_title 
+                font-weight: bold
+                font-size: 24px
+                line-height: 30px
+                max-width: 400px 
+                width: 100% 
+                margin-right: 50px 
+            &_content_text 
+                font-size: 18px
+                line-height: 30px
+                margin-bottom: 36px

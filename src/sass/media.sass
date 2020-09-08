@@ -62,6 +62,11 @@
         &_item
             padding: 54px 30px
 
+
+    .product-card_seed_top 
+        .product-card_szr_view_photo
+            max-width: 500px
+
 @media screen and (max-width: 1165px) 
     .main-catalog_micro-wr 
         .catalog-micro-wr
@@ -78,6 +83,16 @@
     .filter-item:after
         height: 60%
         top: 17px
+
+
+    .product-card_seed_top 
+        flex-direction: column
+        .product-card_szr_top_view
+            max-width: 100%
+            margin-right: 0
+
+        .product-card_szr_top_desc 
+            max-width: 100%
 
 @media screen and (max-width: 1024px) 
     .footer 
@@ -114,6 +129,9 @@
           .footer-dev
             display: none
 
+    .about-company_static_right 
+        padding: 55px 40px
+
 @media screen and (max-width: 1000px) 
     .form
         &_title
@@ -143,7 +161,14 @@
             
             div 
                 justify-content: space-between
+    .wrapper-grid 
+        grid-template-columns: 1fr 
 
+    .form-news_wr         
+        margin-top: 50px 
+    .other-news_wr 
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(365px, 1fr))
     .main-tape
         display: grid
         grid-template-columns: 1fr 1fr 
@@ -201,6 +226,34 @@
     .cat_download-btn
         max-width: 500px
 
+    
+
+    .product-card_seed_content_table 
+        &_row
+            align-items: flex-start 
+            flex-direction: column
+            border-top: 1px solid #EEEEEE 
+            &_title 
+                max-width: 100%
+                    
+            &:nth-of-type(2n)
+                .product-card_seed_content_table_row_title 
+                    background-color: #ffffff
+                .product-card_seed_content_table_row_val 
+                    background-color: rgba(229, 229, 229, 0.5)
+
+    .about-company_static 
+        flex-direction: column
+
+    .about-company_static_left 
+        flex-direction: row 
+        max-width: 100% 
+        margin-bottom: 30px
+        &_item 
+            margin-right: 20px 
+            &:last-of-type
+                margin-right: 0
+
 @media screen and (max-width: 800px) 
     .form
         &-quest
@@ -248,18 +301,46 @@
                 width: 100%
                 margin-bottom: 20px
 
+    .product-card_seed_top
+        .product-card_szr_view_photo 
+            max-width: 410px
+
+
+
+    .tabs-details 
+        padding: 40px 25px 60px 25px
+
+    .inner-gallery_wr_info 
+        flex-direction: column
+        &_title 
+            max-width: 100% 
+            margin-bottom: 25px 
+        &_btns 
+            width: 100% 
+            justify-content: space-between
+        &_counter 
+            margin-right: 20px
+
+  
+    .about-company_static_left
+        flex-wrap: wrap
+
+
+    .about-company_static_left_item 
+        margin-bottom: 25px
+
 @media screen and (max-width: 600px)    
     .footer
         &_form 
             form 
                 div
-                flex-direction: column
-                input 
-                    box-sizing: border-box
-                    max-width: 100%
-                    margin-bottom: 25px
-                button 
-                    width: 100%
+                    flex-direction: column
+                    input 
+                        box-sizing: border-box
+                        max-width: 100%
+                        margin-bottom: 25px
+                    button 
+                        width: 100%
 
 
     .form
@@ -290,7 +371,12 @@
             &_desc 
                 padding-right: 20px
 
-
+    .cite-wrapp_content
+        padding: 50px
+        padding-left: 85px
+        &:before 
+            left: 25px
+            top: 40px
 
 @media screen and (max-width: 560px) 
     .search-wrap 
@@ -307,6 +393,39 @@
         grid-template-columns: 1fr 
     
     .product-card_szr_top_view_nav 
+        overflow-x: auto
         .slick-list.draggable 
             .slick-track
                 flex-direction: row
+
+    .product-card_szr_view_photo_nav_item
+        padding: 25px 25px
+
+    .product-card_seed_top
+        .product-card_szr_view_photo
+            max-width: 320px
+    .product-card_szr_top_desc-btn-wr 
+        flex-direction: column
+
+    .product-card_szr_buy 
+        margin-top: 15px
+
+
+    .product-card_szr_content_char_desc
+        font-size: 18px
+        width: 70%
+
+    .product-card_szr_view_photo_item_type 
+        position: absolute
+        top: 20px
+        left: 0px
+        width: 64px
+        height: 64px
+    .info_news_title 
+        font-size: 30px
+
+    .about-company_static_right 
+        padding: 52px 15px
+        .btn-text--white 
+            svg
+                margin-left: 20px

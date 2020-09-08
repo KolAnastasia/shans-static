@@ -36,5 +36,24 @@
         display: flex
         align-items: center 
         flex-direction: row
+        border-top: 1px solid #EEEEEE 
         &_title 
-            
+            background-color: #ffffff
+            padding: 25px 10px 25px 35px
+            font-weight: bold
+            font-size: 14px
+            width: 100% 
+            max-width: 330px
+            border-right: 1px solid #EEEEEE
+        &_val 
+                background-color: rgba(229, 229, 229, 0.5)
+                padding: 25px 10px 25px 35px
+                font-size: 14px
+                width: 100%
+        &:last-of-type
+            border-bottom: 1px solid #EEEEEE                 
+        &:nth-of-type(2n)
+            .product-card_seed_content_table_row_title 
+                background-color: transparent
+            .product-card_seed_content_table_row_val 
+                background-color: transparent
