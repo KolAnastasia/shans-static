@@ -161,7 +161,12 @@
             padding: 0 25px
         
     &_slider-nav
-        max-width: 500px
+        width: 100% 
+        max-width: 660px
+        overflow-x: hidden
+        .slick-slider, .slick-track, .slick-slider, .slick-list
+            overflow-y: visible 
+            overflow-x: initial 
         &-wr
             display: flex 
             justify-content: flex-end
@@ -169,7 +174,23 @@
         &_item 
             font-size: 18px
             line-height: 30px
+            cursor: pointer
             color: #9E9E9E 
+            position: relative 
+            text-align: center
+            padding-top: 25px
+            &:after 
+                position: absolute 
+                content: "" 
+                background-image: url(../img/about-circle.svg)
+                background-size: cover 
+                background-repeat: no-repeat 
+                background-position: center 
+                width: 8px 
+                height: 8px
+                left: 50% 
+                top: -4px 
+                transform: translateX(-50%)
     &_slider 
         &_item 
             &_wr 
@@ -180,10 +201,10 @@
                 font-weight: bold
                 font-size: 24px
                 line-height: 30px
-                max-width: 400px 
-                width: 100% 
                 margin-right: 50px 
             &_content_text 
                 font-size: 18px
                 line-height: 30px
                 margin-bottom: 36px
+                max-width: 660px 
+                width: 100% 
