@@ -152,9 +152,7 @@ if($('div').is(".about-history_slider-nav-wr")) {
     let  activeSlideVal = activeSlideDate.text();
     $('.about-history_active').text(activeSlideVal)
     var sliderWrapper = $('.about-history_slider-nav-wr'); 
-    if (sliderWrapper.width() < 981) {
-      
-    }
+   
   });
 }
 
