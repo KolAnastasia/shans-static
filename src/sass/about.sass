@@ -163,14 +163,43 @@
     &_slider-nav
         width: 100% 
         max-width: 660px
-        overflow-x: hidden
-        .slick-slider, .slick-track, .slick-slider, .slick-list
-            overflow-y: visible 
-            overflow-x: initial 
-        &-wr
+        .slick-list
+            overflow: initial
+            .slick-current
+                .about-history_slider-nav_item:before 
+                    position: absolute
+                    content: ""
+                    background-color: rgba(158, 158, 158, 0.2)
+                    height: 30px
+                    width: 30px
+                    border-radius: 50%
+                    z-index: 2
+                    top: -15px
+                    left: 50%
+                    -webkit-transform: translateX(-50%)
+                    transform: translateX(-50%)
+                        
+        &-main-wr
             display: flex 
             justify-content: flex-end
-            margin-bottom: 65px
+            margin-bottom: 65px 
+            position: relative
+        &-wr 
+            max-width: 660px
+            padding-top: 90px
+            margin-top: -91px
+            overflow-x: hidden
+            position: relative
+            width: 100%
+            .about-history_active 
+                position: absolute
+                font-weight: 800
+                font-size: 48px
+                line-height: 57px
+                color: #78BE20
+                z-index: 5
+                top: 0
+                left: 16px
         &_item 
             font-size: 18px
             line-height: 30px
@@ -191,6 +220,7 @@
                 left: 50% 
                 top: -4px 
                 transform: translateX(-50%)
+                z-index: 3
     &_slider 
         &_item 
             &_wr 

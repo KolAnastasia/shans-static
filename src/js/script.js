@@ -136,7 +136,6 @@ if ($('div').is(".about-history-wr")) {
     slidesToScroll: 1,
     asNavFor: '.about-history_slider',
     dots: false,
-    centerMode: true,
     focusOnSelect: true,
     nextArrow: $('.about-history_slider-btn-next'),
     prevArrow: $('.about-history_slider-btn-prev'),
@@ -144,6 +143,22 @@ if ($('div').is(".about-history-wr")) {
   });
 
 }
+
+if($('div').is(".about-history_slider-nav-wr")) {
+  $('.about-history_slider-nav').on('afterChange', function(){
+   
+    let activeSlide = $('.about-history_slider-nav').find('.slick-current');
+    let activeSlideDate = activeSlide.find('.about-history_bottom'); 
+    let  activeSlideVal = activeSlideDate.text();
+    $('.about-history_active').text(activeSlideVal)
+    var sliderWrapper = $('.about-history_slider-nav-wr'); 
+    if (sliderWrapper.width() < 981) {
+      
+    }
+  });
+}
+
+
 if ($('div').is(".filter-item-wr")) {
 let selectForm = function () {
     let selectHeader = document.querySelector('.filter-item-wr');
