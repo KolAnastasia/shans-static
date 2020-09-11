@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>title</title>
     <link media="none" onload="if(media!='all') media='all'" rel="stylesheet" type="text/css" href="../css/main.css">
-
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=dd921288-9ea9-4f8c-b4e2-24433e0d6943&lang=ru_RU" type="text/javascript">
+    </script>
 </head>
 
 <body class="page">
@@ -104,13 +105,13 @@
                     <a href="#"> Главная </a>
                 </li>
                 <li class="breadcrumb_item">
-                    <a href="#"> О компании </a>
+                    <a href="#"> Контакты </a>
                 </li>
                 <li class="active-page">
-                  Миссия и ценности
+                    Где купить
                 </li>
             </ul>
-            <h1 class="breadcrumbs-heading">О компании</h1>
+            <h1 class="breadcrumbs-heading">Контакты </h1>
         </div>
     </div>
     <main>
@@ -118,156 +119,92 @@
         <div class="container">
             <ul class="content_link">
                 <li> <a href="#">
-                        о компании</a> </li>
-                <li> <a href="#"> История </a></li>
-                <li class="is-active"> <a href="#"> Миссия и ценности </a></li>
-                <li><a href="#"> География присутствия </a></li>
-                <li> <a href="#"> Производство </a></li>
+                        Контакты</a> </li>
+                <li> <a href="#"> Реквизиты </a></li>
+                <li class="is-active"> <a href="#"> где купить </a></li>
+                <li><a href="#"> обратная связь </a></li>
             </ul>
             <div class="main-wrapper">
-                <div class="about-mission-wr">
-                    <div class="about-mission_banner">
-                        Защита растений - наша профессия!
-                    </div>
-                    <div class="about-mission_subtitle"> Наши цели </div>
-                    <div class="about-mission_note">Дать возможность сельхозпроизводителям:
-                    </div>
-                    <div class="about-mission_prospect-wr">
-                        <div class="about-mission_prospect_item">
-                            <div class="about-mission_prospect_item_img"><img src="../img/about-mis1.svg" alt=""></div>
-                            <div class="about-mission_prospect_item_desc">увеличивать
-                                продуктивность культур </div>
-
+              <div class="contacts-where-wr">
+                <div class="contacts-where_filter-wr">
+                    <form>
+                    <div class="contacts-where_filter-item-wr">
+                        <div id="filter" class="contacts-where_filter-item">
+                          <div class="contacts-where_filter-item_header">
+                            <span class="select__current">Россия</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 5L7.4641 0.5H0.535898L4 5Z" fill="#9E9E9E"/>
+                              </svg>
+                              
+                          </div>
+                          <div class="contacts-where_filter-item_body">
+                            <div class="contacts-where_filter-item_body_item" data-value="voronezh"> Не Россия 1 </div>
+                            <div class="contacts-where_filter-item_body_item" data-value="lipetsk"> Не Россия 2 </div>
+                            <div class="contacts-where_filter-item_body_item" data-value="belgorod"> Не Россия 3 </div>
+                          </div>
                         </div>
-                        <div class="about-mission_prospect_item">
-                            <div class="about-mission_prospect_item_img"> <img src="../img/about-mis2.svg" alt=""></div>
-                            <div class="about-mission_prospect_item_desc">увеличивать плодородие посевных площадей
-                            </div>
-
+                        <div id="filter" class="contacts-where_filter-item">
+                          <div class="contacts-where_filter-item_header">
+                            <span class="select__current">Алтайский край</span>
+                            <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 5L7.4641 0.5H0.535898L4 5Z" fill="#9E9E9E"/>
+                              </svg>
+                              
+                          </div>
+                          <div class="contacts-where_filter-item_body">
+                            <div class="contacts-where_filter-item_body_item" data-value="voronezh"> Не Алтайский край 1 </div>
+                            <div class="contacts-where_filter-item_body_item" data-value="lipetsk"> Не Алтайский край 2 </div>
+                            <div class="contacts-where_filter-item_body_item" data-value="belgorod"> Не Алтайский край 3 </div>
+                          </div>
                         </div>
-                        <div class="about-mission_prospect_item">
-                            <div class="about-mission_prospect_item_img"> <img src="../img/about-mis3.svg" alt=""></div>
-                            <div class="about-mission_prospect_item_desc"> способствовать созданию экологически чистых
-                                продуктов питания </div>
-
-                        </div>
-                        <div class="about-mission_prospect_item">
-                            <div class="about-mission_prospect_item_img"> <img src="../img/about-mis4.svg" alt=""></div>
-                            <div class="about-mission_prospect_item_desc"> заботиться о здоровье людей
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="about-mission_subtitle"> Наша миссия - помочь клиентам вырастить здоровый и экологически
-                        чистый урожай! </div>
-                    <div class="about-mission_note">Мы берем на себя полную ответственность за решение ключевых проблем
-                        сельхозпроизводителей в части заботы об урожае: получение нужной густоты насаждения и подавление
-                        всех вредных объектов.
-                    </div>
-                    <div class="about-mission_slider-wr">
-                        <div class="about-mission_slider">
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                            <div class="about-mission_slider_item"> <img src="../img/mission-sl.jpg" alt=""> </div>
-                        </div>
-                        <div class="about-mission_slider-arrows">
-                            <div class="about-mission_slider-arr about-mission_slider-arr-prev"> 
-                                <svg width="14"
-                                    height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M14 5.5H2M2 5.5L6.50783 1M2 5.5L6.50783 10" stroke="#9E9E9E"
-                                        stroke-width="2" />
-                                </svg>
-                            </div>
-                            <div class="about-mission_slider-arr about-mission_slider-arr-next">
-                                <svg width="14"
-                                    height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 5.5H12M12 5.5L7.49217 1M12 5.5L7.49217 10" stroke="#9E9E9E"
-                                        stroke-width="2" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="about-mission_slider_block">
-                        <div class="about-mission_slider_block_title"> Галерея </div>
-                        <div class="about-mission_slider_block_content"> Фотографии, видео и другие медиаматериалы нашей компании и производимой продукции  </div>
-                        <a href="#" class="btn-text--white">
-                            <span> <span> перейти в галерею </span>
-                                <svg width="39" height="11" viewBox="0 0 39 11" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0 5.5H37M37 5.5L32.4922 1M37 5.5L32.4922 10" stroke="white"
-                                        stroke-width="2" />
-                                </svg>
-
-                            </span>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section class="form-quest-section">
-            <div class="form-quest">
-                <div class="container">
-                    <div class="form-quest_top">
-                        <div class="form_title">Приглашаем к сотрудничеству</div>
-                        <div class="form_desc">
-                            Звоните по телефону
-                            <a href="tel:+74732204941">+7 (473) 220-49-41</a> или заполните форму и мы свяжемся с Вами в
-                            ближайшее
-                            время
-                        </div>
-                    </div>
-                    <form class="form-quest_form">
-                        <input type="text" name="name" id placeholder="Ваше имя" />
-                        <input type="tel" name="tel" id placeholder="Телефон" />
-                        <input type="email" name="email" id placeholder="E-mail" />
-                        <div class="form-quest_theme-wr">
-                            <div id="theme" class="form-quest_theme">
-                                <div class="form-quest_header">
-                                    <span class="form-quest__current">Выберите вид деятельности</span>
-                                </div>
-                                <div class="form-quest_body">
-                                    <div class="form-quest_body_item" data-value="value1">Выберите вид деятельности 1
-                                    </div>
-                                    <div class="form-quest_body_item" data-value="value2">Выберите вид деятельности 2
-                                    </div>
-                                    <div class="form-quest_body_item" data-value="value3">Выберите вид деятельности 3
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <input type="text" name="quest" id="questions" placeholder="Комментарий" />
-                        <div class="form-quest_geo">
-                            <a href="#">
-                                <img src="../img/geo-ic.svg" alt />
-                                Ближайший офис
-                            </a>
-                        </div>
-                        <div class="form-quest_bottom-wr">
-                            <div class="form-quest_agreement">
-                                <input type="checkbox" name id="agreement-quest" checked required />
-                                <label for="agreement-quest">Даю согласие на <a href="#">обработку персональных данных
-                                    </a></label>
-                            </div>
-                            <div class="btn-wrap">
-                                <button type="submit">
-                                    Отправить
-                                    <span>
-                                        <svg width="39" height="11" viewBox="0 0 39 11" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M0 5.5H37M37 5.5L32.4922 1M37 5.5L32.4922 10" stroke="white"
-                                                stroke-width="2" />
-                                        </svg>
-                                    </span>
-                                </button>
-                            </div>
-                        </div>
+                      </div>
+              
+                      <button class="btn--green"> искать  </button>
                     </form>
                 </div>
+                <div class="contacts-where_all"> 
+                    <a href="#">  <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 0C5.14413 0.00222548 3.36488 0.781739 2.05258 2.16753C0.740282 3.55331 0.00210746 5.43221 0 7.39201C0 12.8991 6.34183 17.4267 6.61176 17.6166C6.72704 17.6968 6.86203 17.7395 7.00004 17.7395C7.13806 17.7395 7.27305 17.6968 7.38833 17.6166C7.65817 17.4267 14 12.8991 14 7.39201C13.9979 5.43221 13.2597 3.55331 11.9474 2.16753C10.6351 0.781739 8.85587 0.00222548 7 0Z" fill="#78BE20"/>
+                        <ellipse cx="6.99994" cy="7.39188" rx="3.08002" ry="3.25223" fill="white"/>
+                        </svg>
+                        Все дилеры на карте
+                    </a>
+                </div>
+              </div>
+
+              <div class="contacts_subtitle">Барнаул</div>
+              <div class="contacts-where_info">
+                <div class="contacts-where_info_item">
+                    <div class="contacts_dep_item_title">
+                        Адрес
+                    </div>
+                    <div class="contacts_dep_item_content">
+                        ул. Солнечная поляна, д. 22а, 3 этаж, офис 4
+                    </div>  
+                </div>
+                <div class="contacts-where_info_item">
+                    <div class="contacts_dep_item_title">
+                        Телефон
+                    </div>
+                    <div class="contacts_dep_item_content">
+                       <a href="tel:+7 (385) 259-15-69"> +7 (385) 259-15-69 </a>
+                    </div>  
+                </div>
+                <div class="contacts-where_info_item">
+                    <div class="contacts_dep_item_title">
+                        Электронная почта
+                    </div>
+                    <div class="contacts_dep_item_content">
+                       <a href="mailto:22@shans-group.com">22@shans-group.com</a>
+                    </div>  
+                </div>
+              
+              </div>
+
+                <div id="where-map" style="width:100%; height: 400px" > </div>
             </div>
-        </section>
+        </div>
+        
     </main>
     <div class="container">
         <footer class="footer">
@@ -290,7 +227,7 @@
                             <a href="#">Карьера</a>
                         </li>
                         <li>
-                            <a href="press-center">Пресс-центр</a>
+                            <a href="contacts-where-center">Пресс-центр</a>
                         </li>
                         <li>
                             <a href="#">Контакты</a>

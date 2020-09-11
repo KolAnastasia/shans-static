@@ -152,6 +152,12 @@
         flex-direction: column
         align-items: center
 
+    .contacts-where-wr 
+        flex-direction: column 
+        align-items: flex-start 
+        .contacts-where_filter-wr 
+            margin-bottom: 25px
+
 @media screen and (max-width: 1000px) 
     .form
         &_title
@@ -166,6 +172,54 @@
             max-width: 100%
 
 
+    
+    .about-mission 
+        &_slider
+            &_block 
+                position: relative
+                top: auto 
+                left: auto 
+                max-width: 100% 
+                margin-top: 40px
+                &_content 
+                    margin-bottom: 50px
+            &-wr 
+                width: 100% 
+                max-width: 100%
+            &-arrows 
+                justify-content: center 
+                margin-right: 0 
+                margin-top: 15px
+        &_banner 
+            margin-bottom: 50px     
+        &_prospect-wr 
+            grid-gap: 35px
+            margin-bottom: 80px
+
+    .about-production 
+        &_slider
+            &_block 
+                position: relative
+                top: auto 
+                left: auto 
+                max-width: 100% 
+                margin-top: 40px
+                &_content 
+                    margin-bottom: 50px
+            &-wr 
+                width: 100% 
+                max-width: 100%
+            &-arrows 
+                justify-content: center 
+                margin-right: 0 
+                margin-top: 15px
+        &_banner 
+            margin-bottom: 50px     
+        &_prospect-wr 
+            grid-gap: 35px
+            margin-bottom: 80px
+
+        
 @media screen  and (max-width: 981px)
     .form-sing
         &_wr 
@@ -274,6 +328,22 @@
             &:last-of-type
                 margin-right: 0
 
+    .contacts-where_filter-wr 
+        width: 100%
+        form 
+            margin-right: 0 
+        .contacts-where_filter-item-wr 
+            flex-direction: column 
+            margin-right: 15px
+            width: 100%
+        .contacts-where_filter-item 
+            margin-bottom: 10px 
+            width: 100%
+            &_header 
+                border-right: none
+
+
+
 @media screen and (max-width: 800px) 
     .form
         &-quest
@@ -349,6 +419,24 @@
     .about-company_static_left_item 
         margin-bottom: 25px
 
+    .about-mission_banner 
+        font-size: 28px
+
+    .about-mission_slider_block 
+        padding: 50px 20px
+
+    .about-production_slider_block 
+        padding: 50px 20px
+
+    .about-geography
+        &_content 
+            flex-direction: column
+            &_left 
+                max-width: 500px 
+                margin-bottom: 55px
+
+
+
 @media screen and (max-width: 600px)    
     .footer
         &_form 
@@ -398,6 +486,13 @@
             left: 25px
             top: 40px
 
+    .about-production_note
+        padding: 25px
+
+    .contacts-where_filter-wr form 
+        flex-direction: column 
+        align-items: flex-start
+        
 @media screen and (max-width: 560px) 
     .search-wrap 
         form 
@@ -449,3 +544,19 @@
         .btn-text--white 
             svg
                 margin-left: 20px
+
+
+@media print 
+    .header, .footer, .breadcrumb-wr, 
+    .breadcrumb-wr, .content_link, .requisites_print-wr, 
+    .form-quest-section 
+        display: none
+
+    .main-wrapper 
+        padding: 0
+    .contacts-requisites_content_table 
+        border-bottom: none
+    .contacts-requisites_content_table_row_title 
+        padding: 15px 10px 5px 25px
+    .contacts-requisites_content_table_row_val 
+        padding: 15px 10px 5px 25px 

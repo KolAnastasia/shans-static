@@ -157,6 +157,17 @@ if($('div').is(".about-history_slider-nav-wr")) {
 }
 
 
+$('.about-mission_slider').slick ({
+  nextArrow: $('.about-mission_slider-arr-next'),
+  prevArrow: $('.about-mission_slider-arr-prev'),
+})
+
+$('.about-production_slider').slick ({
+  nextArrow: $('.about-production_slider-arr-next'),
+  prevArrow: $('.about-production_slider-arr-prev'),
+})
+
+
 if ($('div').is(".filter-item-wr")) {
 let selectForm = function () {
     let selectHeader = document.querySelector('.filter-item-wr');
@@ -197,6 +208,71 @@ if ($('div').is(".inner-gallery_slider")) {
   })
 }
 
+if ($('div').is("#about-geography_map")) {
+  ymaps.ready(init);
+  function init() {
+      var myMap = new ymaps.Map("about-geography_map", {
+          center: [55.030199, 82.92043],
+          zoom: 4,
+      }),
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                      '<div></div>'
+                      ),
+              myPlacemarkWithContent = new ymaps.Placemark([55.030199, 82.92043], {
+                 
+                hintContent: '<div style="background: #78BE20; color: #ffffff; padding: 14px; max-width: 140px"> <div style="text-transform: uppercase; font-weight: bold;"> Волгоград </div>  </br> пр-т Университетский, 64, оф 207</div>',
+              }, 
+              {
+                  iconLayout: 'default#imageWithContent',
+                  iconImageHref: '../img/map-icon.svg',
+                  iconImageSize: [18, 23],
+                  iconImageOffset: [-20, -15],
+                  iconContentOffset: [15, 15],
+                  iconContentLayout: MyIconContentLayout
+              }              
+              );
+      myMap.geoObjects
+              .add(myPlacemarkWithContent);
+
+      myMap.setType('yandex#map');
+
+              
+  }
+}
+
+
+if ($('div').is("#contacts-map")) {
+  ymaps.ready(init);
+  function init() {
+      var myMap = new ymaps.Map("contacts-map", {
+          center: [51.67347848805412,39.252679558197],
+          zoom: 17,
+      }),
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                      '<div></div>'
+                      ),
+              myPlacemarkWithContent = new ymaps.Placemark([51.67347848805412,39.252679558197], {
+                 
+              }, 
+              {
+                  iconLayout: 'default#imageWithContent',
+                  iconImageHref: '../img/contacts-mapIcon.svg',
+                  iconImageSize: [32, 38],
+                  iconImageOffset: [-20, -15],
+                  iconContentOffset: [15, 15],
+                  iconContentLayout: MyIconContentLayout
+              }              
+              );
+      myMap.geoObjects
+              .add(myPlacemarkWithContent);
+
+      myMap.setType('yandex#map');           
+  }
+}
+
+
+
+
 if ($('div').is(".press_filter-item-wr")) {
 let filterNews = function () {
   let selectHeader = document.querySelector('.press_filter-item-wr');
@@ -221,7 +297,63 @@ let filterNews = function () {
 filterNews();
 }
 
+if ($('div').is(".contacts-where_filter-item-wr")) {
+let filterWhere = function () {
+  let selectHeader = document.querySelector('.contacts-where_filter-item-wr');
+  let selectItem =  document.querySelectorAll('.contacts-where_filter-item_body_item');
+  selectHeader.addEventListener("click", function () {
+      selectToggle();
+  });
+  selectItem.forEach(function (item) {
+      item.addEventListener("click", function () {
+          selectChoose(item);
+      });
+  });
+  function selectToggle() {
+      document.querySelector('.contacts-where_filter-item').classList.toggle('active');
+  }
+  function selectChoose(option) {
+      let selectedText = option.innerText
+      document.querySelector('.select__current').innerText(selectedText);
+      selectToggle();
+  }
+};
+filterWhere();
+}
+
+
+if ($('div').is("#where-map")) {
+  ymaps.ready(init);
+  function init() {
+      var myMap = new ymaps.Map("where-map", {
+          center: [53.373799,83.662384],
+          zoom: 17,
+      }),
+              MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+                      '<div></div>'
+                      ),
+              myPlacemarkWithContent = new ymaps.Placemark([53.373799,83.662384], {
+                 
+              }, 
+              {
+                  iconLayout: 'default#imageWithContent',
+                  iconImageHref: '../img/contacts-mapIcon.svg',
+                  iconImageSize: [32, 38],
+                  iconImageOffset: [-20, -15],
+                  iconContentOffset: [15, 15],
+                  iconContentLayout: MyIconContentLayout
+              }              
+              );
+      myMap.geoObjects
+              .add(myPlacemarkWithContent);
+
+      myMap.setType('yandex#map');           
+  }
+}
+
+
 
 $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 });
+
