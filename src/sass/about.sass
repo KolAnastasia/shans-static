@@ -178,6 +178,10 @@
                     left: 50%
                     -webkit-transform: translateX(-50%)
                     transform: translateX(-50%)
+                .about-history_active 
+                    font-size: 48px 
+                    transition: .2s
+
                         
         &-main-wr
             display: flex 
@@ -192,14 +196,17 @@
             position: relative
             width: 100%
             .about-history_active 
-                position: absolute
                 font-weight: 800
-                font-size: 48px
-                line-height: 57px
+                font-size: 0
+                height: 57px
                 color: #78BE20
                 z-index: 5
-                top: 0
-                left: 19px
+                width: max-content
+                position: absolute
+                top: -70px
+                left: 20px
+                transition: .2s
+
         &_item 
             font-size: 18px
             line-height: 30px
