@@ -158,6 +158,15 @@
         .contacts-where_filter-wr 
             margin-bottom: 25px
 
+    .contacts-feedback_wr 
+        grid-template-columns: 1fr
+
+    .contacts-feedback_comm 
+        grid-column: initial 
+    
+    .contacts-feedback_btn-wr 
+        grid-column: initial
+
 @media screen and (max-width: 1000px) 
     .form
         &_title
@@ -492,6 +501,13 @@
     .contacts-where_filter-wr form 
         flex-direction: column 
         align-items: flex-start
+        
+    .contacts-feedback_btn-wr
+        flex-direction: column
+
+    .feedback_label-wr 
+        margin-right: 0 
+        margin-bottom: 50px
         
 @media screen and (max-width: 560px) 
     .search-wrap 

@@ -321,6 +321,32 @@ let filterWhere = function () {
 filterWhere();
 }
 
+if ($('div').is(".feedback-theme-wr")) {
+  
+let feedbackTheme = function () {
+  let selectHeader = document.querySelector('.feedback-theme_header');
+  let selectItem =  document.querySelectorAll('.feedback-theme_body_item');
+  selectHeader.addEventListener("click", function () {
+      selectToggle();
+  });
+  selectItem.forEach(function (item) {
+      item.addEventListener("click", function () {
+          selectChoose(item);
+      });
+  });
+  function selectToggle() {
+      document.querySelector('.feedback-theme').classList.toggle('active');
+  }
+  function selectChoose(option) {
+      let selectedText = option.innerText
+      document.querySelector('.select__current').innerText(selectedText);
+      selectToggle();
+  }
+};
+
+feedbackTheme();
+}
+
 
 if ($('div').is("#where-map")) {
   ymaps.ready(init);
