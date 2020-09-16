@@ -167,6 +167,10 @@
     .contacts-feedback_btn-wr 
         grid-column: initial
 
+    .inform-cultures_inner 
+        grid-template-columns: 1fr 240px
+        grid-column-gap: 30px
+
 @media screen and (max-width: 1000px) 
     .form
         &_title
@@ -351,6 +355,11 @@
             &_header 
                 border-right: none
 
+    .inform-cultures_inner 
+        display: flex 
+        flex-direction: column-reverse 
+        &_aside_menu 
+            margin-bottom: 64px
 
 
 @media screen and (max-width: 800px) 
@@ -361,6 +370,11 @@
                     grid-column: span 1
             &_bottom-wr
                 grid-column: span 1
+
+    .form-fake-file-wr 
+        label 
+            &:before 
+                display: none
 
 
 @media screen and (max-width: 768px) 
@@ -444,6 +458,7 @@
                 max-width: 500px 
                 margin-bottom: 55px
 
+    
 
 
 @media screen and (max-width: 600px)    
@@ -508,6 +523,10 @@
     .feedback_label-wr 
         margin-right: 0 
         margin-bottom: 50px
+    
+    .accordionTitle:before, .accordion__Heading:before
+        left: 10px
+        
         
 @media screen and (max-width: 560px) 
     .search-wrap 
@@ -561,6 +580,12 @@
             svg
                 margin-left: 20px
 
+
+    .inform-note-wr 
+        padding: 35px 15px 35px 20px
+    .inform-note_inner 
+        padding: 0 12px
+        border-left-width: 5px
 
 @media print 
     .header, .footer, .breadcrumb-wr, 

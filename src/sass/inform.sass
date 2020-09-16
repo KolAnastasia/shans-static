@@ -1,4 +1,13 @@
 .inform     
+    &-note 
+        &-wr 
+            background-color: #FFFFFF
+            padding: 48px 15px 48px 51px 
+            margin-bottom: 35px
+        &_inner 
+            padding: 0 24px
+            max-width: 575px 
+            border-left: 8px solid #78BE20
     &-links-tab
         li 
             padding: 0 35px 30px 35px
@@ -31,5 +40,265 @@
                 text-transform: uppercase
                 color: #000000
                 text-align: center 
+        &_inner
+            display: grid 
+            grid-template-columns: 1fr 330px 
+            grid-column-gap: 80px
+            &_content 
+                &-wr 
+                    display: none 
+                    &.active 
+                        display: block
+                    > p 
+                        margin-bottom: 35px
+                        &:last-of-type
+                            margin-bottom: 35px
+                    > span 
+                        margin-bottom: 35px 
+                        display: inline-block
+                    > img 
+                        margin-bottom: 35px 
+                > p 
+                    margin-bottom: 35px
+                    &:last-of-type
+                        margin-bottom: 35px
+                > span 
+                    margin-bottom: 35px 
+                    display: inline-block
+                    
+                > img 
+                    margin-bottom: 35px 
 
+
+            &_subtitle 
+                font-weight: 800
+                font-size: 24px
+                line-height: 29px
+                color: #000000
+                margin-bottom: 48px 
+            &_micro 
+                display: grid
+                grid-template-columns: repeat(auto-fit, minmax(330px, 330px))
+                grid-gap: 64px
+                margin-bottom: 35px 
+                &-wr
+                    margin-top: 35px 
+
+            &_aside
+                margin-bottom: 48px 
+
+                &_menu 
+                    list-style: none 
+                    padding: 0 
+                    margin: 0
+                    margin-top: 48px
+                    li 
+                        font-weight: 800
+                        font-size: 14px
+                        line-height: 17px
+                        color: #000000
+                        text-decoration: none 
+                        cursor: pointer
+                        margin-bottom: 30px
+                        position: relative 
+                        &:after
+                            position: absolute 
+                            content: "" 
+                            bottom: -2px 
+                            left: 0 
+                            width: 0 
+                            transition: .5s 
+                            height: 2px 
+                            background-color: #78BE20 
+
+                        &.is-active 
+                            &:after 
+                                right: 0 
+                                width: 100%
+                                transition: .5s 
+    &-articles-wr 
+        display: grid 
+        grid-template-columns: repeat(auto-fit, minmax(328px, 1fr))
+        grid-gap: 48px 80px
+        .news_item_date:after 
+            display: none
+
+    &-articles-main-wr 
+        .btn-more_wr 
+            margin: 64px auto 0 auto
+
+.articles_content_wrap 
+    padding-bottom: 100px
+    .wrapper-grid_content
+        > p
+            margin: 35px 0
     
+    .info_news_date:after
+        display: none
+
+
+.inform-type_source 
+    margin-top: 36px
+.inform_aside_doc
+    a 
+        color: #000000 
+        text-decoration: none 
+        display: block        
+        margin-bottom: 20px
+        &:hover 
+            .inform_aside_doc_content_title 
+                color: #78BE20 
+                transition: .2s
+
+    &_item 
+        display: grid 
+        grid-template-columns: 48px 1fr 
+        grid-column-gap: 33px
+    &_content 
+        &_title 
+            font-weight: bold
+            font-size: 14px
+            line-height: 24px
+            transition: .2s
+        &_type 
+            font-size: 12px
+            line-height: 24px
+            color: #9E9E9E
+        
+.form-fake-file-wr 
+    grid-row: span 2
+    input 
+        display: none 
+    label
+        font-weight: 800
+        font-size: 12px
+        line-height: 14px
+        letter-spacing: 0.1em
+        text-decoration-line: underline
+        text-transform: uppercase
+        color: #FFFFFF
+        position: relative 
+        cursor: pointer 
+        &:before
+            content: ""
+            position: absolute
+            background-image: url(../img/clip--white.svg)
+            width: 21px
+            height: 20px
+            left: -35px
+            top: 0px
+    span 
+        font-size: 12px
+        line-height: 18px
+        margin-top: 10px
+        color: #FFFFFF
+        display: block
+
+
+.heading-primary 
+    font-size: 2em
+    padding: 2em
+    text-align: center
+
+.accordion dl,
+.accordion-list 
+    border: 1px solid #ddd
+    &:after 
+        content: ""
+        display: block
+        height: 1em
+        width: 100%
+        background-color: darken(#78BE20, 10%)
+     
+
+.accordion dd,
+.accordion__panel 
+    background-color: #eee
+    font-size: 1em
+    line-height: 1.5em
+
+.accordion p 
+    margin: 15px 0
+
+.accordion-content 
+    padding-right: 20px
+.accordion 
+    position: relative
+    background-color: #eee
+
+.accordionTitle,
+.accordion__Heading 
+    background-color: #78BE20
+    text-align: center
+    font-weight: 700
+    padding: 20px 2em
+    display: block
+    text-decoration: none
+    position: relative
+    color:  #fff
+    transition: background-color 0.5s ease-in-out
+    border-bottom: 1px solid darken(#78BE20, 5%)
+    &:before 
+        content: "+"
+        position: absolute
+        font-size: 1.5em
+        line-height: 0.5em
+        transition: transform 0.3s ease-in-out
+        top: calc(50% - 8px) 
+        left: 50px 
+        height: 16px
+    
+    &:hover 
+        background-color: darken(#78BE20, 10%)
+  
+
+.accordionTitleActive, 
+.accordionTitle.is-expanded 
+    background-color: darken(#78BE20, 10%)
+    &:before 
+        transform: rotate(-225deg)
+    
+
+
+.accordionItem 
+    height: auto
+    overflow: auto
+    max-height: 50em
+    transition: max-height 1s   
+    @media screen and (min-width:48em) 
+        max-height: 35em
+        transition: max-height 0.5s
+
+.accordionItem.is-collapsed 
+    max-height: 0
+
+
+.no-js .accordionItem.is-collapsed 
+    max-height: auto
+
+.animateIn 
+    animation: accordionIn 0.45s normal ease-in-out both 1
+
+.animateOut 
+    animation: accordionOut 0.45s alternate ease-in-out both 1
+
+@keyframes accordionIn 
+    0% 
+        opacity: 0
+        transform: scale(0.9) rotateX(-60deg)
+        transform-origin: 50% 0
+    100% 
+        opacity: 1
+        transform: scale(1)
+  
+
+
+@keyframes accordionOut 
+    0% 
+        opacity: 1
+        transform: scale(1)
+        
+    100% 
+        opacity: 0
+        transform: scale(0.9) rotateX(-60deg)
+       
