@@ -1,0 +1,66 @@
+.buyers
+    &--grid
+        display: grid 
+        grid-template-columns: 1fr 300px 
+        grid-column-gap: 80px
+    &_subtitle 
+        font-weight: 800
+        font-size: 24px
+        line-height: 29px 
+        margin-bottom: 36px 
+    &_content 
+        > p 
+            margin-bottom: 36px 
+            &:last-of-type
+                margin-bottom: 0 
+    &_aside 
+        &_contacts 
+            margin-bottom: 48px
+            &_item 
+                margin-bottom: 24px 
+                &:last-of-type 
+                    margin-bottom: 0
+                &_subtitle 
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 155.14%
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #9E9E9E
+                &_content 
+                    font-size: 14px
+                    line-height: 22px
+                    a 
+                        font-size: 14px
+                        line-height: 22px
+                        color: #000000 
+                        text-decoration: none 
+                        transition: .2s
+                        &:hover 
+                            color: #78BE20
+                            transition: .2s
+            &_office 
+                a 
+                    display: flex
+                    align-items: center 
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #78BE20
+                    text-decoration: none 
+                    svg 
+                        margin-right: 12px 
+                    &:hover 
+                        color: #000000
+    &_stocks 
+        display: grid 
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+        grid-gap: 48px 81px 
+        .stocks_item 
+            .news_item_date:after
+                display: none
+    &-wr 
+        .btn-more_wr 
+            margin: 64px auto 0 auto
