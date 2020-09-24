@@ -1,0 +1,178 @@
+.fav 
+    &_top-wr 
+        display: flex
+        justify-content: space-between
+        margin-bottom: 64px
+        align-items: center
+        h1 
+            margin-bottom: 0
+        &_right 
+            display: flex
+            align-items: center 
+
+            .requisites_print-wr 
+                margin-bottom: 0
+
+            .btn--green
+                margin: 0 40px
+
+            .fav-btn-wr 
+                display: flex 
+                border: 1px solid #E5E5E5
+
+            .fav-btn-dots 
+                padding: 16px 21px
+                cursor: pointer
+                background-color: #F8F8F8
+                svg 
+                    path 
+                        fill: #C4C4C4
+
+            .fav-btn-dots.active
+                background-color: #ffffff
+                svg 
+                    path 
+                        fill: #78BE20
+
+
+    &_subtitle
+        font-weight: 800
+        font-size: 24px
+        line-height: 36px
+        margin-bottom: 42px
+    &_inner-wr
+        display: grid 
+        grid-template-columns: repeat(auto-fit, 320px)
+        grid-gap: 64px 80px
+        margin-bottom: 100px
+        .catalog_item
+            margin-bottom: 0
+        &:last-of-type
+            padding-bottom: 100px
+            margin-bottom: 0
+
+    &-list
+        .fav_inner-wr 
+            display: flex 
+            flex-wrap: wrap
+            grid-gap: initial
+            .catalog_item 
+                width: 50%
+                border-bottom: 1px solid transparent
+                max-width: 100%
+                display: flex
+                &:nth-of-type(2n)
+                    border-left: 1px solid transparent
+                &:nth-last-of-type(-n+2) 
+                    border-bottom: 1px solid #E5E5E5
+                &_img-wr
+                    padding: 45px 60px 10px 35px
+                    position: relative 
+                a:hover 
+                    .catalog_item_title
+                        color: #78BE20
+                        transition: .2s
+                &_mark
+                    position: absolute 
+                    top: 0
+                    left: 0
+                    width: 36px
+                &_act-subst 
+                    margin-bottom: 40px 
+                &_fav
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #9E9E9E
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    cursor: pointer
+
+                    img 
+                        margin-right: 23px
+                        width: 30px
+
+            .cat-micro_item
+                width: 50%
+                border-bottom: 1px solid transparent
+                max-width: 100%
+                display: flex
+                &:nth-of-type(2n)
+                    border-left: 1px solid transparent
+                &:nth-last-of-type(-n+2) 
+                    border-bottom: 1px solid #E5E5E5
+                &_img-wr
+                    padding: 45px 60px 10px 35px
+                    position: relative 
+                &_img
+                    padding: 0
+                a:hover 
+                    .cat-micro_item_title
+                        color: #78BE20
+                        transition: .2s
+                &_icons_type
+                    position: absolute 
+                    top: 0
+                    left: 0
+                    width: 36px
+                &_act-components
+                    margin-bottom: 40px 
+                &_icons_fav
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #9E9E9E
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    cursor: pointer
+
+                    img 
+                        margin-right: 23px
+                        width: 30px
+
+            .seed-item 
+                width: 50%
+                border-bottom: 1px solid transparent
+                max-width: 100%
+                display: flex
+                &:nth-of-type(2n)
+                    border-left: 1px solid transparent
+                &:nth-last-of-type(-n+2) 
+                    border-bottom: 1px solid #E5E5E5
+
+                &_img-wr
+                    width: 100px
+                    margin-right: 65px
+                a:hover 
+                    .seed-item_title
+                        color: #78BE20
+                        transition: .2s
+                &_fav
+                    position: relative
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #9E9E9E
+                    display: flex
+                    align-items: center
+                    width: 100%
+                    cursor: pointer
+                    top: initial 
+                    margin-top: 40px
+                    right: initial
+                    img 
+                        width: 30px
+                        margin-right: 23px
+
+    &-wr
+        display: none 
+        &.active
+            display: block

@@ -26,7 +26,16 @@
             .btn-wrap 
                 justify-content: flex-start
 
+    .main-slider_content 
+        left: 11%
+    
+    .main-slider_current-slider 
+        left: 11%
 
+    .main-slider_btn-wrap 
+        position: absolute
+        top: 375px
+        left: calc(11% + 200px)
 
     .main_desc 
         display: flex
@@ -66,6 +75,15 @@
     .product-card_seed_top 
         .product-card_szr_view_photo
             max-width: 500px
+    
+    .advantages_bottom_content 
+        grid-template-columns: 1fr 1fr
+        &_item 
+            &:nth-of-type(3n):after 
+                display: block
+            &:nth-of-type(2n):after 
+                display: none
+
 
 @media screen and (max-width: 1165px) 
     .main-catalog_micro-wr 
@@ -176,6 +194,13 @@
             grid-template-columns: 1fr 
             grid-row-gap: 50px
 
+    .fav
+        &_top-wr 
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            h1 
+                margin-bottom: 35px
 
 
 @media screen and (max-width: 1000px) 
@@ -383,6 +408,13 @@
             &:before 
                 display: none
 
+    .advantages_top
+        flex-direction: column
+        &_desc 
+            margin-bottom: 70px
+            margin-right: 0
+
+
 
 @media screen and (max-width: 768px) 
 
@@ -479,6 +511,53 @@
                 font-size: 48px
 
 
+    .search 
+        &-result 
+            flex-wrap: wrap
+
+        &-article_item
+            width: 100% 
+            margin-right: 0
+
+        &-press_item
+            width: 100% 
+            margin-right: 0
+
+    .fav_top-wr_right 
+        flex-direction: column
+        align-items: flex-start
+        .btn--green 
+            margin: 40px 0
+
+    .fav-list 
+        .fav_inner-wr 
+            .catalog_item, .cat-micro_item, 
+            .seed-item
+                width: 100%
+                &:nth-of-type(2n) 
+                    border-left: 1px solid #E5E5E5
+                &:nth-last-of-type(2) 
+                    border-bottom: none
+                &:nth-last-of-type(1) 
+                    border-bottom: 1px solid #E5E5E5
+                
+    .career-feed_top
+        flex-direction: column 
+        .career-feed_desc 
+            margin-right: 0
+            margin-bottom: 50px
+
+           
+@media screen and (max-width: 700px)    
+    .advantages_bottom_content
+        grid-template-columns: 1fr
+        &_item:nth-of-type(3n):after
+            display: none
+        &_item:after
+            display: none
+
+
+
 @media screen and (max-width: 600px)    
     .footer
         &_form 
@@ -545,7 +624,20 @@
     .accordionTitle:before, .accordion__Heading:before
         left: 10px
         
-        
+    .search-form
+        form 
+            flex-direction: column 
+            input 
+                width: 100% 
+                margin-bottom: 20px
+                min-width: 100%
+                padding: 22px 10px 21px 16px
+            .btn--green 
+                width: 100% 
+
+    .advantages_top_static
+        grid-template-columns: 1fr
+
 @media screen and (max-width: 560px) 
     .search-wrap 
         form 
@@ -608,11 +700,27 @@
     .error_content_not 
         font-size: 36px
         line-height: 1.2
+    
+
+    .career-btn
+        box-sizing: border-box
+        padding: 23px 25px 23px 35px
+
+    @media screen and (max-width: 425px) 
+        .fav-list 
+            .fav_inner-wr 
+                .catalog_item, .cat-micro_item, 
+                .seed-item
+                    flex-direction: column
+                    align-items: flex-start
+                    
+
 
 @media print 
     .header, .footer, .breadcrumb-wr, 
     .breadcrumb-wr, .content_link, .requisites_print-wr, 
-    .form-quest-section 
+    .form-quest-section .catalog_item_fav, .cat-micro_item_icons_fav,
+    .seed-item_fav
         display: none
 
     .main-wrapper 
@@ -623,3 +731,4 @@
         padding: 15px 10px 5px 25px
     .contacts-requisites_content_table_row_val 
         padding: 15px 10px 5px 25px 
+

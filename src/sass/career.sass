@@ -1,0 +1,219 @@
+.career-btn
+    padding: 23px 5px 23px 35px
+    background-color: rgba(120, 190, 32, 0.1)
+    max-width: 300px
+    width: 100%
+
+.advantages 
+    &_top 
+        display: flex
+        align-items: flex-start
+        margin-bottom: 75px
+        &_desc
+            max-width: 570px
+            margin-right: 80px
+            &_content
+                font-size: 14px
+                line-height: 24px
+                p 
+                    margin-bottom: 24px
+        &_static
+            display: grid 
+            grid-template-columns: 1fr 1fr 
+            grid-gap: 48px 81px
+            max-width: 575px
+            &_item 
+                &_num
+                    font-weight: 800
+                    font-size: 48px
+                    line-height: 57px
+                    color: #78BE20 
+                    margin-bottom: 15px
+                &_param 
+                    font-size: 14px
+                    line-height: 24px
+                    color: #9E9E9E
+    &_title
+        font-weight: 800
+        font-size: 24px
+        line-height: 29px
+        margin-bottom: 25px
+
+
+    &_bottom 
+        &_content
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            grid-row-gap: 70px
+
+            &_item
+                position: relative
+                max-width: 260px
+                &_img
+                    margin-bottom: 26px
+                    height: 40px
+                    width: 40px
+                &_desc
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 18px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #000000
+                    position: relative
+              
+                &:after
+                    position: absolute
+                    content: ""
+                    height: 56px
+                    width: 27px
+                    background: url('../img/tape-line.svg') center no-repeat
+                    bottom: 0
+                    right: -55px
+                &:nth-of-type(3n):after 
+                    display: none
+.career-feed
+    &_top 
+        display: flex 
+        margin-bottom: 64px
+    &_desc 
+        max-width: 400px 
+        width: 100%
+        margin-right: 100px
+    &_contact
+        &_name 
+            font-weight: bold
+            font-size: 18px
+            line-height: 24px
+        &_pos 
+            color: #9E9E9E 
+            font-size: 14px
+            margin-bottom: 15px
+        &_city 
+            font-size: 14px
+            margin-bottom: 5px
+        &_tel 
+            margin-bottom: 5px
+            a
+                display: block 
+                color: #000000
+                font-weight: bold
+                font-size: 14px
+                transition: .2s
+                text-decoration: none 
+                &:hover 
+                    color: #78BE20
+                    transition: .2s
+        &_mail 
+            font-size: 14px
+            line-height: 17px
+            color: #78BE20
+            transition: .2s
+            display: inline-block
+            margin-bottom: 50px
+            &:hover 
+                color: #000000
+                transition: .2s
+    &_bottom
+        .advantages_top_desc_content 
+            max-width: 365px
+        .career-feed_wr
+            display: grid 
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)) 
+            grid-gap: 35px 82px
+            justify-items: end
+            align-items: flex-start
+            input 
+                padding: 26px 15px 23px 35px 
+                background-color: #ffffff 
+                border: none 
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 0.1em
+                text-transform: uppercase
+                font-weight: 800 
+                color: #000000 
+                width: 100%
+                font-family: 'SF Pro Display', Arial, Helvetica, sans-serif
+                box-sizing: border-box
+                &::placeholder 
+                    font-weight: 800
+                    font-size: 12px
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-transform: uppercase
+                    color: #9e9e9e
+                    font-family: 'SF Pro Display', Arial, Helvetica, sans-serif
+            #feedback-down 
+                display: none
+            .feedback_form_btn-wr
+                input
+                    display: none
+                label 
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 14px
+                    color: #9E9E9E 
+                    display: inline-block 
+                    padding-left: 35px 
+                    position: relative
+                    margin-bottom: 25px                    
+                    cursor: pointer
+                    &:before 
+                        content: "" 
+                        position: absolute
+                        opacity: 0.5
+                        border: 1px solid #9E9E9E
+                        box-sizing: border-box
+                        width: 18px 
+                        left: 0 
+                        top: -2px
+                        height: 18px 
+                    &:after 
+                        content: "" 
+                        position: absolute
+                        box-sizing: border-box
+                        width: 8px 
+                        left: 5px
+                        top: 3px
+                        height: 8px 
+                    a 
+                        text-decoration: underline 
+                        color: #9e9e9e
+                        &:hover 
+                            text-decoration: none 
+
+            .feedback_label-wr 
+                label 
+                    display: inline-block 
+                    font-weight: 800
+                    font-size: 12px
+                    cursor: pointer 
+                    position: relative  
+                    line-height: 14px
+                    letter-spacing: 0.1em
+                    text-decoration-line: underline
+                    text-transform: uppercase
+                    margin-bottom: 16px
+                    color: #000000
+                    padding-left: 40px 
+
+                    &:hover 
+                        text-decoration: none 
+                    &:before 
+                        content: "" 
+                        position: absolute 
+                        background-image: url(../img/clip.svg) 
+                        width: 20px 
+                        height: 20px 
+                        top: -2px 
+                        left: 0
+                span 
+                    display: block 
+                    font-size: 12px
+                    line-height: 18px
+                    color: #9E9E9E
+                    margin-left: 40px 
+
+#contacts-feedback-agreement:checked + .feedback-agreement_label:after
+    background-color: #78BE20
