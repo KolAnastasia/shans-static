@@ -123,6 +123,10 @@
 
 
 .product-card_szr_content
+    p 
+        margin-bottom: 25px
+    h2 
+        margin-bottom: 10px
     &_char 
         display: grid
         grid-template-columns: repeat(auto-fit, minmax(400px, 400px))
@@ -152,3 +156,21 @@
             margin-bottom: 24px
             span 
                 color: #000000
+
+    table 
+        border-collapse: collapse
+        tr 
+            
+            th 
+                font-size: 16px
+            td 
+                padding: 15px 
+                font-size: 14px
+                border: 1px solid #E5e5e5
+            &:nth-of-type(2n) 
+                td 
+                    background-color: #ffffff
+            &:nth-of-type(2n+1) 
+                td 
+                    background-color: rgb(239, 239, 239)
+                
