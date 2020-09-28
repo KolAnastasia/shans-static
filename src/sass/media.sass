@@ -84,6 +84,22 @@
             &:nth-of-type(2n):after 
                 display: none
 
+    .main-page_news .news-wrap 
+        grid-template-columns: 1fr 1fr
+        grid-gap: 25px
+
+
+    .mob-menu_container 
+        display: block
+
+    .mob-menu_icon
+        display: block
+
+    .catalog-szr-wrap-top_wrap
+        flex-direction: column
+        align-items: flex-start
+    .catalog-szr-wrap_filters-wrap 
+        margin-bottom: 35px
 
 @media screen and (max-width: 1165px) 
     .main-catalog_micro-wr 
@@ -111,6 +127,36 @@
 
         .product-card_szr_top_desc 
             max-width: 100%
+
+@media screen and (max-width: 1060px) 
+    .catalog-szr-wrap_filters-wrap 
+        flex-direction: column
+        align-items: flex-start
+        max-height: 0
+        transition: .2s
+        overflow: hidden
+        &.active 
+            max-height: 100% 
+            transition: .2s
+            overflow: visible
+        .filter-item-wr
+            width: 100% 
+            margin-bottom: 20px
+
+    .catalog-szr-wrap_filters
+        flex-direction: column
+        align-items: flex-start
+
+    .main-page_filter-open
+        display: flex
+
+    .main-page_subtitle_wrapper-flex 
+        flex-direction: column 
+        align-items: flex-start
+        margin-bottom: 0
+        h2 
+            margin-bottom: 35px 
+    
 
 @media screen and (max-width: 1024px) 
     .footer 
@@ -394,6 +440,8 @@
             margin-bottom: 64px
 
 
+
+
 @media screen and (max-width: 800px) 
     .form
         &-quest
@@ -547,7 +595,16 @@
             margin-right: 0
             margin-bottom: 50px
 
+
+    .header-city-tel 
+        display: none
            
+ 
+    .main-page_news .news-wrap 
+        grid-template-columns: 1fr 
+        grid-gap: 25px
+
+
 @media screen and (max-width: 700px)    
     .advantages_bottom_content
         grid-template-columns: 1fr
@@ -638,6 +695,26 @@
     .advantages_top_static
         grid-template-columns: 1fr
 
+    .main-page_subtitle_wrapper-flex_btn-wr
+        flex-direction: column 
+        align-items: flex-start
+        .download-btn
+            width: 100%
+            &:first-of-type
+                margin-right: 0
+                margin-bottom: 15px
+
+    .catalog-plants-wrap_top-wr
+        flex-direction: column 
+        align-items: flex-start 
+        margin-bottom: 35px
+        h2 
+            margin-bottom: 25px
+            font-size: 25px
+            line-height: 31px
+
+
+
 @media screen and (max-width: 560px) 
     .search-wrap 
         form 
@@ -706,15 +783,61 @@
         box-sizing: border-box
         padding: 23px 25px 23px 35px
 
-    @media screen and (max-width: 425px) 
-        .fav-list 
-            .fav_inner-wr 
-                .catalog_item, .cat-micro_item, 
-                .seed-item
-                    flex-direction: column
-                    align-items: flex-start
-                    
 
+    .main-slider_content_bottom
+        margin-left: 0
+
+    .main-slider_current-slider
+        top: 180px
+        left: 20px
+
+    .main-slider_content h1
+        margin-bottom: 105px
+        font-size: 24px
+        line-height: 1.3
+
+    .main-slider_btn-wrap 
+        display: none
+
+    .main_desc--right--bottom
+        flex-direction: column
+        &_pluses 
+            &:first-of-type
+                margin-bottom: 35px 
+
+@media screen and (max-width: 425px) 
+    .fav-list 
+        .fav_inner-wr 
+            .catalog_item, .cat-micro_item, 
+            .seed-item
+                flex-direction: column
+                align-items: flex-start
+                    
+    .header_language
+        span 
+            display: none 
+
+    .header_logo
+        max-width: 116px 
+
+    .header_favourites
+        border: none
+
+    .main-tape 
+        grid-template-columns: 1fr
+
+    .form-sing_left_title 
+        font-size: 32px
+        line-height: 1.3
+    
+    .catalog_item 
+       max-width: 280px
+
+    .plants-item 
+        max-width: 258px
+
+    .form-quest_form        
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
 
 @media print 
     .header, .footer, .breadcrumb-wr, 

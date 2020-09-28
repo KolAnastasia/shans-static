@@ -7,14 +7,55 @@ $(document).ready(function () {
     arrows: true, // скрыть стрелки
     nextArrow: $(".catalog-szr_slider-next"),
     prevArrow: $(".catalog-szr_slider-prev"),
+    responsive: [
+      {
+        breakpoint: 981,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
   })
+
 
   $(".main-page_catalog-plants_slider-wr").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: true, // скрыть стрелки
     nextArrow: $(".catalog-plants_slider-btn-prev"),
-    prevArrow: $(".catalog-plants_slider-btn-next")
+    prevArrow: $(".catalog-plants_slider-btn-next"),
+    responsive: [
+      {
+        breakpoint: 981,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ]
   })
 
   $(".main-slider-wr").slick({
@@ -376,6 +417,7 @@ $(document).ready(function () {
   $('input[type="tel"]').mask("+7 (999) 999-99-99");
 
 
+
   (function () {
     var d = document,
       accordionToggles = d.querySelectorAll('.js-accordionTrigger'),
@@ -446,6 +488,16 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
+  $('.mob-menu_icon').click(function() {
+    $('.mob-menu_icon').toggleClass('active');
+    $('.mob-menu_container').toggleClass('active');
+    $('main').toggleClass('fixed');
+    $('.footer').toggleClass('fixed');
+  })
+
+  $('.main-page_filter-open').click(function() {
+    $('.catalog-szr-wrap_filters-wrap').toggleClass('active')
+  })
 
 });
 
